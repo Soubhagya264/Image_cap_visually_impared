@@ -3,3 +3,5 @@ env/
 config/secrets.yaml
 .idead/
 .vscode/
+
+data/

@@ -1,0 +1,18 @@
+[2021-11-08 13:16:18,231: INFO: stage_01_load_save]: 
+ >>>>>>>>>> stage one started
+[2021-11-08 13:16:18,233: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-08 13:16:18,242: INFO: all_utils]: directory is created at data/Flicker8k_Dataset
+[2021-11-08 13:16:24,554: INFO: all_utils]: directory is created at data/Flickr8k_text
+[2021-11-08 13:16:24,568: ERROR: stage_01_load_save]: [Errno 13] Permission denied: '../data/Flickr8k_text\\__MACOSX'
+Traceback (most recent call last):
+  File "src/stage_01_load_save.py", line 39, in <module>
+    get_data(config_path=parsed_args.config)
+  File "src/stage_01_load_save.py", line 30, in get_data
+    copy_file(source_path,local_dir)
+  File "src/stage_01_load_save.py", line 19, in copy_file
+    shutil.copy(src,des)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python38\lib\shutil.py", line 415, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python38\lib\shutil.py", line 261, in copyfile
+    with open(src, 'rb') as fsrc, open(dst, 'wb') as fdst:
+PermissionError: [Errno 13] Permission denied: '../data/Flickr8k_text\\__MACOSX'

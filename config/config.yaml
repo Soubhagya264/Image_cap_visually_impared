@@ -11,10 +11,10 @@ artifacts:
 
 source_download_path:
    - ../data/Flicker8k_Dataset
-   - ../data/Flicker8k_text
+   - ../data/Flickr8k_text
    - ../data/Pickle
 
 local_data_dirs:
    - data/Flicker8k_Dataset
-   - data/Flicker8k_text
+   - data/Flickr8k_text
    - data/Pickle  

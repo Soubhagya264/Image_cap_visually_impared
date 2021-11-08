@@ -7,3 +7,5 @@ flask
 opencv-python
 boto3
 pyYAML
+
+-e .

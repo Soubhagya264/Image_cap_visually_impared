@@ -19,11 +19,8 @@ setup(
         "tensorflow",
         "matplotlib",
         "numpy",
-        "flask"
-        "pandas",
         "tqdm",
         "PyYAML",
-        "boto3" ,
         "opencv-python",
     ]
 )

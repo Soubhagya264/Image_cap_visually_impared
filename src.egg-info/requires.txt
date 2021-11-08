@@ -1,0 +1,7 @@
+dvc
+tensorflow
+matplotlib
+numpy
+tqdm
+PyYAML
+opencv-python
