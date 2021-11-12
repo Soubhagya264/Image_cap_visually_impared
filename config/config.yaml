@@ -28,3 +28,4 @@ prepaired_data_dir:
    - prepaired_data/vocab_size_dir
    - prepaired_data/max_length_dir
    - prepaired_data/wordtoix_dir     
+   - prepaired_data/train_img

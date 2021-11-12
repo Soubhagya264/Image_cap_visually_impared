@@ -52,6 +52,7 @@ def prepare_train_images(images,img,train_images):
     for im in img:
         if (im[len(images):] in train_images):
             train_img.append(im)
+           
     logging.info("prepared  train_img")        
     return train_img        
 
