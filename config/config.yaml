@@ -8,6 +8,11 @@ artifacts:
    BASE_LOG_DIR: Base_model_dir
    TENSORBOARD_ROOT_LOG_DIR: Tensorboard_log_dir
    CALLBACKS_DIR: callbacks
+   DATA_DIR: data
+   IMAGE_DATA: Flicker8k_Dataset
+   TEXT_DATA: Flickr8k_text
+   TOKEN_PATH_NAME: Flickr8k.token.txt
+   TRAIN_PATH: Flickr_8k.trainImages.txt
 
 source_download_path:
    - ../data/Flicker8k_Dataset
@@ -18,3 +23,8 @@ local_data_dirs:
    - data/Flicker8k_Dataset
    - data/Flickr8k_text
    - data/Pickle  
+
+prepaired_data_dir:
+   - prepaired_data/vocab_size_dir
+   - prepaired_data/max_length_dir
+   - prepaired_data/wordtoix_dir     

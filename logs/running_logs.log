@@ -16,3 +16,588 @@ Traceback (most recent call last):
   File "C:\Users\HP\AppData\Local\Programs\Python\Python38\lib\shutil.py", line 261, in copyfile
     with open(src, 'rb') as fsrc, open(dst, 'wb') as fdst:
 PermissionError: [Errno 13] Permission denied: '../data/Flickr8k_text\\__MACOSX'
+[2021-11-10 12:23:22,545: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-10 12:23:22,545: ERROR: stage_02_data_preparation]: data_preparation() missing 1 required positional argument: 'params_path'
+Traceback (most recent call last):
+  File "src/stage_02_data_preparation.py", line 45, in <module>
+    data_preparation(config_path=parsed_args.config,)
+TypeError: data_preparation() missing 1 required positional argument: 'params_path'
+[2021-11-10 12:24:25,989: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-10 12:24:25,992: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-10 12:24:25,992: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-10 12:24:25,992: INFO: stage_02_data_preparation]: stage one completed !! all the data stored in local 
+ >>>>>>>>>>>>
+[2021-11-10 12:28:14,445: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-10 12:28:14,446: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-10 12:28:14,446: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-10 12:28:14,481: INFO: stage_02_data_preparation]: stage one completed !! all the data stored in local 
+ >>>>>>>>>>>>
+[2021-11-10 12:34:13,796: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-10 12:34:13,798: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-10 12:34:13,798: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-10 12:34:14,053: INFO: stage_02_data_preparation]: stage one completed !! all the data stored in local 
+ >>>>>>>>>>>>
+[2021-11-10 14:30:45,133: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-10 14:30:45,134: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-10 14:30:45,135: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-10 14:30:45,437: INFO: stage_02_data_preparation]: stage one completed !! all the data stored in local 
+ >>>>>>>>>>>>
+[2021-11-10 20:51:27,119: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-10 20:51:27,120: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-10 20:51:27,120: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-10 20:51:27,123: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-10 20:51:27,149: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-10 20:51:27,149: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-10 20:51:27,372: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-10 20:51:27,372: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-10 20:51:27,406: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-10 20:51:27,407: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-10 20:51:27,407: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-10 20:51:27,774: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-10 20:51:27,777: INFO: stage_02_data_preparation]: stage one completed !! all the data stored in local 
+ >>>>>>>>>>>>
+[2021-11-12 15:15:56,611: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-12 15:15:56,614: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 15:15:56,615: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 15:15:56,621: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 15:15:56,657: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 15:15:56,657: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 15:15:56,946: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 15:15:56,946: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 15:15:56,990: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 15:15:57,003: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 15:15:57,003: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 15:15:57,524: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 15:15:57,524: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 15:15:57,527: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 15:15:57,616: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 15:15:57,616: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 15:15:57,617: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 15:15:57,622: INFO: stage_02_data_preparation]: stage one completed !! all the data stored in local 
+ >>>>>>>>>>>>
+[2021-11-12 18:58:11,456: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-12 18:58:11,459: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 18:58:11,459: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 18:58:11,465: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 18:58:11,498: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 18:58:11,498: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 18:58:11,760: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 18:58:11,761: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 18:58:11,799: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 18:58:11,803: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 18:58:11,803: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 18:58:12,222: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 18:58:12,222: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 18:58:12,224: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 18:58:12,292: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 18:58:12,293: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 18:58:12,293: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 18:58:12,298: INFO: stage_02_data_preparation]: stage one completed !! all the data stored in local 
+ >>>>>>>>>>>>
+[2021-11-12 19:04:02,701: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-12 19:04:02,703: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 19:04:02,704: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 19:04:02,706: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 19:04:02,739: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 19:04:02,739: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 19:04:02,998: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 19:04:02,998: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 19:04:03,043: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 19:04:03,044: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 19:04:03,044: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 19:04:03,486: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 19:04:03,486: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 19:04:03,489: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 19:04:03,568: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 19:04:03,568: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 19:04:03,568: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 19:04:03,568: ERROR: stage_02_data_preparation]: can only concatenate str (not "int") to str
+Traceback (most recent call last):
+  File "src/stage_02_data_preparation.py", line 73, in <module>
+    data_preparation(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_02_data_preparation.py", line 47, in data_preparation
+    print(local_dir+data)
+TypeError: can only concatenate str (not "int") to str
+[2021-11-12 19:04:30,699: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-12 19:04:30,701: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 19:04:30,701: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 19:04:30,704: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 19:04:30,737: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 19:04:30,737: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 19:04:31,001: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 19:04:31,001: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 19:04:31,046: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 19:04:31,047: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 19:04:31,047: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 19:04:31,483: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 19:04:31,483: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 19:04:31,485: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 19:04:31,558: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 19:04:31,558: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 19:04:31,558: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 19:04:31,618: INFO: stage_02_data_preparation]: stage one completed !! all the data stored in local 
+ >>>>>>>>>>>>
+[2021-11-12 19:06:45,397: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-12 19:06:45,400: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 19:06:45,400: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 19:06:45,402: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 19:06:45,435: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 19:06:45,435: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 19:06:45,688: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 19:06:45,688: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 19:06:45,728: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 19:06:45,729: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 19:06:45,729: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 19:06:46,170: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 19:06:46,170: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 19:06:46,172: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 19:06:46,254: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 19:06:46,254: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 19:06:46,254: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 19:06:46,261: INFO: stage_02_data_preparation]: stage one completed !! all the data stored in local 
+ >>>>>>>>>>>>
+[2021-11-12 19:06:57,938: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-12 19:06:57,941: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 19:06:57,941: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 19:06:57,944: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 19:06:57,976: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 19:06:57,976: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 19:06:58,512: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 19:06:58,512: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 19:06:58,558: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 19:06:58,559: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 19:06:58,559: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 19:06:59,033: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 19:06:59,033: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 19:06:59,035: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 19:06:59,112: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 19:06:59,112: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 19:06:59,113: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 19:06:59,118: INFO: stage_02_data_preparation]: stage one completed !! all the data stored in local 
+ >>>>>>>>>>>>
+[2021-11-12 19:07:56,292: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-12 19:07:56,295: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 19:07:56,295: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 19:07:56,298: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 19:07:56,333: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 19:07:56,333: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 19:07:56,644: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 19:07:56,644: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 19:07:56,688: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 19:07:56,689: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 19:07:56,689: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 19:07:57,164: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 19:07:57,164: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 19:07:57,166: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 19:07:57,249: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 19:07:57,249: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 19:07:57,249: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 19:07:57,256: INFO: stage_02_data_preparation]: stage one completed !! all the data stored in local 
+ >>>>>>>>>>>>
+[2021-11-12 19:11:01,912: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-12 19:11:01,915: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 19:11:01,915: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 19:11:01,918: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 19:11:01,952: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 19:11:01,952: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 19:11:02,251: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 19:11:02,251: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 19:11:02,297: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 19:11:02,298: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 19:11:02,298: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 19:11:02,765: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 19:11:02,765: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 19:11:02,767: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 19:11:02,851: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 19:11:02,851: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 19:11:02,852: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 19:11:02,852: ERROR: stage_02_data_preparation]: write() argument must be str, not int
+Traceback (most recent call last):
+  File "src/stage_02_data_preparation.py", line 76, in <module>
+    data_preparation(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_02_data_preparation.py", line 48, in data_preparation
+    file1.write(data)
+TypeError: write() argument must be str, not int
+[2021-11-12 19:12:31,657: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-12 19:12:31,660: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 19:12:31,660: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 19:12:31,663: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 19:12:31,702: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 19:12:31,702: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 19:12:31,968: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 19:12:31,968: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 19:12:32,009: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 19:12:32,010: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 19:12:32,010: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 19:12:32,443: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 19:12:32,443: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 19:12:32,445: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 19:12:32,523: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 19:12:32,523: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 19:12:32,523: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 19:12:32,524: ERROR: stage_02_data_preparation]: write() argument must be str, not int
+Traceback (most recent call last):
+  File "src/stage_02_data_preparation.py", line 76, in <module>
+    data_preparation(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_02_data_preparation.py", line 48, in data_preparation
+    file1.write(data)
+TypeError: write() argument must be str, not int
+[2021-11-12 19:13:55,178: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-12 19:13:55,180: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 19:13:55,180: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 19:13:55,183: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 19:13:55,217: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 19:13:55,217: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 19:13:55,492: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 19:13:55,493: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 19:13:55,537: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 19:13:55,538: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 19:13:55,538: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 19:13:55,967: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 19:13:55,967: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 19:13:55,969: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 19:13:56,048: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 19:13:56,049: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 19:13:56,049: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 19:13:56,049: ERROR: stage_02_data_preparation]: write() argument must be str, not int
+Traceback (most recent call last):
+  File "src/stage_02_data_preparation.py", line 79, in <module>
+    data_preparation(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_02_data_preparation.py", line 48, in data_preparation
+    file1.write(data)
+TypeError: write() argument must be str, not int
+[2021-11-12 19:14:54,849: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-12 19:14:54,851: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 19:14:54,852: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 19:14:54,854: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 19:14:54,887: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 19:14:54,887: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 19:14:55,150: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 19:14:55,150: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 19:14:55,189: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 19:14:55,191: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 19:14:55,191: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 19:14:55,621: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 19:14:55,621: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 19:14:55,623: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 19:14:55,694: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 19:14:55,695: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 19:14:55,695: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 19:14:55,739: INFO: stage_02_data_preparation]: stage one completed !! all the data stored in local 
+ >>>>>>>>>>>>
+[2021-11-12 19:15:45,254: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-12 19:15:45,257: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 19:15:45,257: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 19:15:45,260: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 19:15:45,292: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 19:15:45,292: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 19:15:45,554: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 19:15:45,554: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 19:15:45,599: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 19:15:45,600: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 19:15:45,600: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 19:15:46,040: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 19:15:46,040: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 19:15:46,042: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 19:15:46,123: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 19:15:46,123: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 19:15:46,123: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 19:15:46,159: INFO: stage_02_data_preparation]: stage one completed !! all the data stored in local 
+ >>>>>>>>>>>>
+[2021-11-12 19:17:59,232: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-12 19:17:59,234: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 19:17:59,234: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 19:17:59,237: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 19:17:59,270: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 19:17:59,270: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 19:17:59,541: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 19:17:59,541: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 19:17:59,587: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 19:17:59,588: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 19:17:59,588: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 19:18:00,006: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 19:18:00,006: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 19:18:00,008: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 19:18:00,091: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 19:18:00,092: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 19:18:00,092: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 19:18:00,100: INFO: stage_02_data_preparation]: stage one completed !! all the data stored in local 
+ >>>>>>>>>>>>
+[2021-11-12 19:18:49,165: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-12 19:18:49,168: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 19:18:49,168: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 19:18:49,171: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 19:18:49,204: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 19:18:49,204: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 19:18:49,461: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 19:18:49,461: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 19:18:49,506: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 19:18:49,507: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 19:18:49,507: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 19:18:49,944: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 19:18:49,944: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 19:18:49,946: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 19:18:50,025: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 19:18:50,025: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 19:18:50,025: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 19:18:50,026: ERROR: stage_02_data_preparation]: write() argument must be str, not int
+Traceback (most recent call last):
+  File "src/stage_02_data_preparation.py", line 82, in <module>
+    data_preparation(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_02_data_preparation.py", line 51, in data_preparation
+    file1.write(data)
+TypeError: write() argument must be str, not int
+[2021-11-12 19:19:28,800: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-12 19:19:28,803: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 19:19:28,803: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 19:19:28,806: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 19:19:28,838: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 19:19:28,838: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 19:19:29,100: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 19:19:29,101: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 19:19:29,143: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 19:19:29,144: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 19:19:29,144: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 19:19:29,584: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 19:19:29,585: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 19:19:29,586: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 19:19:29,660: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 19:19:29,660: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 19:19:29,660: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 19:19:29,661: ERROR: stage_02_data_preparation]: write() argument must be str, not int
+Traceback (most recent call last):
+  File "src/stage_02_data_preparation.py", line 79, in <module>
+    data_preparation(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_02_data_preparation.py", line 48, in data_preparation
+    file1.write(data)
+TypeError: write() argument must be str, not int
+[2021-11-12 19:20:31,169: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-12 19:20:31,171: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 19:20:31,172: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 19:20:31,174: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 19:20:31,207: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 19:20:31,207: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 19:20:31,464: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 19:20:31,465: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 19:20:31,510: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 19:20:31,511: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 19:20:31,511: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 19:20:31,959: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 19:20:31,959: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 19:20:31,961: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 19:20:32,045: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 19:20:32,045: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 19:20:32,046: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 19:20:32,046: ERROR: stage_02_data_preparation]: write() argument must be str, not int
+Traceback (most recent call last):
+  File "src/stage_02_data_preparation.py", line 79, in <module>
+    data_preparation(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_02_data_preparation.py", line 48, in data_preparation
+    file1.write(data)
+TypeError: write() argument must be str, not int
+[2021-11-12 19:23:05,900: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-12 19:23:05,902: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 19:23:05,903: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 19:23:05,905: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 19:23:05,938: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 19:23:05,938: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 19:23:06,210: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 19:23:06,211: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 19:23:06,256: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 19:23:06,257: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 19:23:06,258: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 19:23:06,694: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 19:23:06,694: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 19:23:06,696: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 19:23:06,774: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 19:23:06,775: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 19:23:06,775: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 19:23:06,775: INFO: stage_02_data_preparation]: started writing the data
+[2021-11-12 19:23:06,775: ERROR: stage_02_data_preparation]: write() argument must be str, not int
+Traceback (most recent call last):
+  File "src/stage_02_data_preparation.py", line 81, in <module>
+    data_preparation(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_02_data_preparation.py", line 49, in data_preparation
+    file1.write(data)
+TypeError: write() argument must be str, not int
+[2021-11-12 19:23:39,000: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-12 19:23:39,003: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 19:23:39,003: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 19:23:39,006: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 19:23:39,039: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 19:23:39,039: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 19:23:39,290: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 19:23:39,291: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 19:23:39,332: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 19:23:39,333: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 19:23:39,333: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 19:23:39,766: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 19:23:39,766: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 19:23:39,768: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 19:23:39,840: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 19:23:39,841: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 19:23:39,841: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 19:23:39,841: INFO: stage_02_data_preparation]: started writing the data
+[2021-11-12 19:23:39,841: INFO: stage_02_data_preparation]: data  written succesfully
+[2021-11-12 19:23:39,841: INFO: stage_02_data_preparation]: started writing the data
+[2021-11-12 19:23:39,841: INFO: stage_02_data_preparation]: data  written succesfully
+[2021-11-12 19:23:39,842: INFO: stage_02_data_preparation]: started writing the data
+[2021-11-12 19:23:39,842: INFO: stage_02_data_preparation]: data  written succesfully
+[2021-11-12 19:23:39,846: INFO: stage_02_data_preparation]: stage one completed !! all the data stored in local 
+ >>>>>>>>>>>>
+[2021-11-12 19:24:37,736: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-12 19:24:37,739: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 19:24:37,739: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 19:24:37,742: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 19:24:37,774: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 19:24:37,774: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 19:24:38,035: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 19:24:38,035: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 19:24:38,074: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 19:24:38,075: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 19:24:38,075: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 19:24:38,509: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 19:24:38,509: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 19:24:38,511: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 19:24:38,591: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 19:24:38,591: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 19:24:38,591: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 19:24:38,592: INFO: stage_02_data_preparation]: started writing the data
+[2021-11-12 19:24:38,592: INFO: stage_02_data_preparation]: data  written succesfully
+[2021-11-12 19:24:38,593: INFO: stage_02_data_preparation]: started writing the data
+[2021-11-12 19:24:38,593: INFO: stage_02_data_preparation]: data  written succesfully
+[2021-11-12 19:24:38,594: INFO: stage_02_data_preparation]: started writing the data
+[2021-11-12 19:24:38,594: INFO: stage_02_data_preparation]: data  written succesfully
+[2021-11-12 19:24:38,600: INFO: stage_02_data_preparation]: stage one completed !! all the data stored in local 
+ >>>>>>>>>>>>
+[2021-11-12 19:25:06,330: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-12 19:25:06,333: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 19:25:06,333: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 19:25:06,336: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 19:25:06,367: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 19:25:06,367: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 19:25:06,626: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 19:25:06,626: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 19:25:06,669: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 19:25:06,670: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 19:25:06,670: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 19:25:07,094: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 19:25:07,094: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 19:25:07,096: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 19:25:07,171: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 19:25:07,171: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 19:25:07,171: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 19:25:07,172: INFO: stage_02_data_preparation]: started writing the data
+[2021-11-12 19:25:07,172: INFO: stage_02_data_preparation]: data  written succesfully
+[2021-11-12 19:25:07,173: INFO: stage_02_data_preparation]: started writing the data
+[2021-11-12 19:25:07,174: INFO: stage_02_data_preparation]: data  written succesfully
+[2021-11-12 19:25:07,174: INFO: stage_02_data_preparation]: started writing the data
+[2021-11-12 19:25:07,175: INFO: stage_02_data_preparation]: data  written succesfully
+[2021-11-12 19:25:07,215: INFO: stage_02_data_preparation]: stage one completed !! all the data stored in local 
+ >>>>>>>>>>>>
+[2021-11-12 19:27:47,577: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-12 19:27:47,580: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 19:27:47,580: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 19:27:47,583: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 19:27:47,615: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 19:27:47,615: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 19:27:47,882: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 19:27:47,882: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 19:27:47,926: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 19:27:47,927: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 19:27:47,927: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 19:27:48,371: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 19:27:48,371: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 19:27:48,373: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 19:27:48,446: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 19:27:48,446: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 19:27:48,446: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 19:27:48,447: INFO: stage_02_data_preparation]: started writing the prepared vocab_size in the prepaired_data/vocab_size_dir/vocab_size.txt file 
+[2021-11-12 19:27:48,447: INFO: stage_02_data_preparation]: prepared data  written succesfully in the prepaired_data/vocab_size_dir/vocab_size.txt file 
+[2021-11-12 19:27:48,447: INFO: stage_02_data_preparation]: started writing the prepared max_length in the prepaired_data/max_length_dir/max_length.txt file 
+[2021-11-12 19:27:48,447: INFO: stage_02_data_preparation]: prepared data  written succesfully in the prepaired_data/max_length_dir/max_length.txt file 
+[2021-11-12 19:27:48,448: INFO: stage_02_data_preparation]: started writing the prepared wordtoix in the prepaired_data/wordtoix_dir/wordtoix.txt file 
+[2021-11-12 19:27:48,448: INFO: stage_02_data_preparation]: prepared data  written succesfully in the prepaired_data/wordtoix_dir/wordtoix.txt file 
+[2021-11-12 19:27:48,451: INFO: stage_02_data_preparation]: stage one completed !! all the data stored in local 
+ >>>>>>>>>>>>
+[2021-11-12 19:31:39,679: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage one started
+[2021-11-12 19:31:39,682: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 19:31:39,682: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 19:31:39,685: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 19:31:39,718: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 19:31:39,719: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 19:31:39,980: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 19:31:39,980: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 19:31:40,023: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 19:31:40,024: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 19:31:40,025: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 19:31:40,471: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 19:31:40,471: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 19:31:40,473: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 19:31:40,552: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 19:31:40,552: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 19:31:40,552: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 19:31:40,552: INFO: stage_02_data_preparation]: started writing the prepared vocab_size in the vocab_size.txt file 
+[2021-11-12 19:31:40,552: INFO: stage_02_data_preparation]: prepared data  written succesfully in the vocab_size.txt file and stored in the prepaired_data/vocab_size_dir dir 
+[2021-11-12 19:31:40,553: INFO: stage_02_data_preparation]: started writing the prepared max_length in the max_length.txt file 
+[2021-11-12 19:31:40,553: INFO: stage_02_data_preparation]: prepared data  written succesfully in the max_length.txt file and stored in the prepaired_data/max_length_dir dir 
+[2021-11-12 19:31:40,553: INFO: stage_02_data_preparation]: started writing the prepared wordtoix in the wordtoix.txt file 
+[2021-11-12 19:31:40,554: INFO: stage_02_data_preparation]: prepared data  written succesfully in the wordtoix.txt file and stored in the prepaired_data/wordtoix_dir dir 
+[2021-11-12 19:31:40,558: INFO: stage_02_data_preparation]: stage two completed !! all the img_text_data prepartion done and stored 
+ >>>>>>>>>>>>
+[2021-11-12 19:33:59,872: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage two started
+[2021-11-12 19:33:59,875: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 19:33:59,875: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 19:33:59,878: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-12 19:33:59,911: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-12 19:33:59,911: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-12 19:34:00,194: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-12 19:34:00,195: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-12 19:34:00,249: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-12 19:34:00,250: INFO: text_img_data_preparation]: prepared  train_img
+[2021-11-12 19:34:00,250: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-12 19:34:00,755: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-12 19:34:00,755: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-12 19:34:00,758: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-12 19:34:00,758: INFO: text_img_data_preparation]: started finding vocab size and maximum length
+[2021-11-12 19:34:00,853: INFO: text_img_data_preparation]: finding vocab_size max_len is completed
+[2021-11-12 19:34:00,854: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-12 19:34:00,854: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-12 19:34:00,854: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-12 19:34:00,855: INFO: stage_02_data_preparation]: started writing the prepared vocab_size in the vocab_size.txt file 
+[2021-11-12 19:34:00,855: INFO: stage_02_data_preparation]: prepared data  written succesfully in the vocab_size.txt file and stored in the prepaired_data/vocab_size_dir dir 
+[2021-11-12 19:34:00,855: INFO: stage_02_data_preparation]: started writing the prepared max_length in the max_length.txt file 
+[2021-11-12 19:34:00,855: INFO: stage_02_data_preparation]: prepared data  written succesfully in the max_length.txt file and stored in the prepaired_data/max_length_dir dir 
+[2021-11-12 19:34:00,856: INFO: stage_02_data_preparation]: started writing the prepared wordtoix in the wordtoix.txt file 
+[2021-11-12 19:34:00,856: INFO: stage_02_data_preparation]: prepared data  written succesfully in the wordtoix.txt file and stored in the prepaired_data/wordtoix_dir dir 
+[2021-11-12 19:34:00,860: INFO: stage_02_data_preparation]: stage two completed !! all the img_text_data prepartion done and stored 
+ >>>>>>>>>>>>
