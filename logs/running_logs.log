@@ -601,3 +601,45 @@ TypeError: write() argument must be str, not int
 [2021-11-12 19:34:00,856: INFO: stage_02_data_preparation]: prepared data  written succesfully in the wordtoix.txt file and stored in the prepaired_data/wordtoix_dir dir 
 [2021-11-12 19:34:00,860: INFO: stage_02_data_preparation]: stage two completed !! all the img_text_data prepartion done and stored 
  >>>>>>>>>>>>
+[2021-11-12 20:10:01,769: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-12 20:10:01,771: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 20:10:01,771: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 20:10:01,771: ERROR: stage_03_prepare_base_model]: 'ARRIFACTS_DIR'
+Traceback (most recent call last):
+  File "src/stage_03_prepare_base_model.py", line 35, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_03_prepare_base_model.py", line 21, in prepare_base_model
+    artifacts_dir=artifacts["ARRIFACTS_DIR"]
+KeyError: 'ARRIFACTS_DIR'
+[2021-11-12 20:35:14,453: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-12 20:35:14,507: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 20:35:14,508: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 20:35:14,508: ERROR: stage_03_prepare_base_model]: 'ARRIFACTS_DIR'
+Traceback (most recent call last):
+  File "src/stage_03_prepare_base_model.py", line 36, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_03_prepare_base_model.py", line 21, in prepare_base_model
+    artifacts_dir=artifacts["ARRIFACTS_DIR"]
+KeyError: 'ARRIFACTS_DIR'
+[2021-11-12 20:37:23,947: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-12 20:37:23,996: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 20:37:23,996: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 20:37:23,996: INFO: all_utils]: directory is created at artifacts\base_model
+[2021-11-12 20:37:23,996: ERROR: stage_03_prepare_base_model]: get_inception_v3_model() missing 1 required positional argument: 'input_shape'
+Traceback (most recent call last):
+  File "src/stage_03_prepare_base_model.py", line 36, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_03_prepare_base_model.py", line 27, in prepare_base_model
+    model=get_inception_v3_model(model_path=base_model_path)
+TypeError: get_inception_v3_model() missing 1 required positional argument: 'input_shape'
+[2021-11-12 20:37:55,305: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-12 20:37:55,354: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-12 20:37:55,354: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-12 20:37:55,354: INFO: all_utils]: directory is created at artifacts\base_model
+[2021-11-12 20:37:58,303: INFO: models]: inception_v3 model saved at: artifacts\base_model\inception_base_model.h5
+[2021-11-12 20:37:58,303: INFO: stage_03_prepare_base_model]: stage three completed !! base model is created 
+ >>>>>>>>>>>>
