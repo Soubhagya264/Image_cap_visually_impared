@@ -2101,3 +2101,259 @@ TypeError: prepare_base_model() missing 1 required positional argument: 'params_
 [2021-11-13 00:16:28,547: INFO: stage_03_prepare_base_model]: encoding done
 [2021-11-13 00:16:28,562: INFO: stage_03_prepare_base_model]: stage three completed !! base model is created 
  >>>>>>>>>>>>
+[2021-11-14 19:11:17,348: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-14 19:11:17,399: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-14 19:11:17,399: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-14 19:11:17,399: ERROR: stage_03_prepare_base_model]: expected str, bytes or os.PathLike object, not list
+Traceback (most recent call last):
+  File "src/stage_03_prepare_base_model.py", line 67, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_03_prepare_base_model.py", line 54, in prepare_base_model
+    Train_feature_path=os.path.join([data_dir,PICKLE_DIR,TRAIN_FEATURES_FILE_NAME])
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python38\lib\ntpath.py", line 78, in join
+    path = os.fspath(path)
+TypeError: expected str, bytes or os.PathLike object, not list
+[2021-11-14 19:12:38,487: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-14 19:12:38,537: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-14 19:12:38,537: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-14 19:12:38,537: INFO: stage_03_prepare_base_model]: strated creating the train_features file
+[2021-11-14 19:12:38,537: ERROR: stage_03_prepare_base_model]: expected str, bytes or os.PathLike object, not list
+Traceback (most recent call last):
+  File "src/stage_03_prepare_base_model.py", line 69, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_03_prepare_base_model.py", line 55, in prepare_base_model
+    Train_feature_path=os.path.join([data_dir,PICKLE_DIR,TRAIN_FEATURES_FILE_NAME])
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python38\lib\ntpath.py", line 78, in join
+    path = os.fspath(path)
+TypeError: expected str, bytes or os.PathLike object, not list
+[2021-11-14 19:13:27,808: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-14 19:13:27,860: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-14 19:13:27,860: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-14 19:13:27,860: INFO: stage_03_prepare_base_model]: strated creating the train_features file
+[2021-11-14 19:13:27,860: INFO: stage_03_prepare_base_model]: done
+[2021-11-14 19:13:27,861: INFO: stage_03_prepare_base_model]: stage three completed !! base model is created 
+ >>>>>>>>>>>>
+[2021-11-14 19:13:49,568: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-14 19:13:49,621: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-14 19:13:49,621: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-14 19:13:49,621: INFO: stage_03_prepare_base_model]: strated creating the train_features file
+[2021-11-14 19:13:49,621: INFO: stage_03_prepare_base_model]: done
+[2021-11-14 19:13:49,622: INFO: stage_03_prepare_base_model]: stage three completed !! base model is created 
+ >>>>>>>>>>>>
+[2021-11-14 19:14:36,516: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-14 19:14:36,579: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-14 19:14:36,579: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-14 19:14:36,579: INFO: stage_03_prepare_base_model]: strated creating the train_features file
+[2021-11-14 19:14:36,580: INFO: stage_03_prepare_base_model]: done
+[2021-11-14 19:14:36,580: INFO: stage_03_prepare_base_model]: stage three completed !! base model is created 
+ >>>>>>>>>>>>
+[2021-11-14 19:15:52,457: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-14 19:15:52,508: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-14 19:15:52,508: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-14 19:15:52,508: INFO: stage_03_prepare_base_model]: strated creating the train_features file
+[2021-11-14 19:15:52,508: INFO: stage_03_prepare_base_model]: done
+[2021-11-14 19:15:52,509: INFO: stage_03_prepare_base_model]: stage three completed !! base model is created 
+ >>>>>>>>>>>>
+[2021-11-14 19:16:18,325: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-14 19:16:18,373: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-14 19:16:18,374: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-14 19:16:18,374: INFO: stage_03_prepare_base_model]: strated creating the train_features file
+[2021-11-14 19:16:18,374: INFO: all_utils]: directory is created at data\Pickle
+[2021-11-14 19:16:18,374: INFO: stage_03_prepare_base_model]: done
+[2021-11-14 19:16:18,375: INFO: stage_03_prepare_base_model]: stage three completed !! base model is created 
+ >>>>>>>>>>>>
+[2021-11-14 19:26:31,942: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-14 19:26:31,999: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-14 19:26:32,000: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-14 19:26:32,000: INFO: all_utils]: directory is created at artifacts\base_model
+[2021-11-14 19:26:35,023: INFO: models]: inception_v3 model saved at: artifacts\base_model\inception_base_model.h5
+[2021-11-14 19:26:35,046: INFO: stage_03_prepare_base_model]: encoding start
+[2021-11-14 19:26:35,046: INFO: stage_03_prepare_base_model]: encoding done
+[2021-11-14 19:26:35,046: INFO: stage_03_prepare_base_model]: strated creating the train_features folder and stored in picke directory
+[2021-11-14 19:26:35,046: INFO: all_utils]: directory is created at data\Pickle
+[2021-11-14 19:26:35,047: ERROR: stage_03_prepare_base_model]: invalid mode: 'Wb'
+Traceback (most recent call last):
+  File "src/stage_03_prepare_base_model.py", line 73, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_03_prepare_base_model.py", line 57, in prepare_base_model
+    with open(Train_feature_path+'/'+TRAIN_FEATURES_FILE_NAME, "Wb") as encoded_pickle:
+ValueError: invalid mode: 'Wb'
+[2021-11-14 19:27:24,194: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-14 19:27:24,245: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-14 19:27:24,245: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-14 19:27:24,246: INFO: all_utils]: directory is created at artifacts\base_model
+[2021-11-14 19:27:27,239: INFO: models]: inception_v3 model saved at: artifacts\base_model\inception_base_model.h5
+[2021-11-14 19:27:27,261: INFO: stage_03_prepare_base_model]: encoding start
+[2021-11-14 19:27:27,262: INFO: stage_03_prepare_base_model]: encoding done
+[2021-11-14 19:27:27,262: INFO: stage_03_prepare_base_model]: strated creating the train_features folder and stored in picke directory
+[2021-11-14 19:27:27,262: INFO: all_utils]: directory is created at data\Pickle
+[2021-11-14 19:27:27,262: ERROR: stage_03_prepare_base_model]: invalid mode: 'W'
+Traceback (most recent call last):
+  File "src/stage_03_prepare_base_model.py", line 73, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_03_prepare_base_model.py", line 57, in prepare_base_model
+    with open(Train_feature_path+'/'+TRAIN_FEATURES_FILE_NAME, "W") as encoded_pickle:
+ValueError: invalid mode: 'W'
+[2021-11-14 19:28:02,631: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-14 19:28:02,682: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-14 19:28:02,682: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-14 19:28:02,682: INFO: all_utils]: directory is created at artifacts\base_model
+[2021-11-14 19:28:05,812: INFO: models]: inception_v3 model saved at: artifacts\base_model\inception_base_model.h5
+[2021-11-14 19:28:05,834: INFO: stage_03_prepare_base_model]: encoding start
+[2021-11-14 19:28:05,834: INFO: stage_03_prepare_base_model]: encoding done
+[2021-11-14 19:28:05,834: INFO: stage_03_prepare_base_model]: strated creating the train_features folder and stored in picke directory
+[2021-11-14 19:28:05,835: INFO: all_utils]: directory is created at data\Pickle
+[2021-11-14 19:28:05,835: ERROR: stage_03_prepare_base_model]: invalid mode: 'W'
+Traceback (most recent call last):
+  File "src/stage_03_prepare_base_model.py", line 74, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_03_prepare_base_model.py", line 58, in prepare_base_model
+    with open(Train_feature_path+'/'+TRAIN_FEATURES_FILE_NAME, "W") as encoded_pickle:
+ValueError: invalid mode: 'W'
+[2021-11-14 19:29:20,745: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-14 19:29:20,796: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-14 19:29:20,796: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-14 19:29:20,797: INFO: all_utils]: directory is created at artifacts\base_model
+[2021-11-14 19:29:23,777: INFO: models]: inception_v3 model saved at: artifacts\base_model\inception_base_model.h5
+[2021-11-14 19:29:23,801: INFO: stage_03_prepare_base_model]: encoding start
+[2021-11-14 19:29:23,801: INFO: stage_03_prepare_base_model]: encoding done
+[2021-11-14 19:29:23,801: INFO: stage_03_prepare_base_model]: strated creating the train_features folder and stored in picke directory
+[2021-11-14 19:29:23,802: INFO: all_utils]: directory is created at data\Pickle
+[2021-11-14 19:29:23,802: ERROR: stage_03_prepare_base_model]: invalid mode: 'Wb'
+Traceback (most recent call last):
+  File "src/stage_03_prepare_base_model.py", line 74, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_03_prepare_base_model.py", line 58, in prepare_base_model
+    with open(os.path.join(Train_feature_path,TRAIN_FEATURES_FILE_NAME), "Wb") as encoded_pickle:
+ValueError: invalid mode: 'Wb'
+[2021-11-14 19:29:48,152: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-14 19:29:48,203: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-14 19:29:48,203: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-14 19:29:48,203: INFO: all_utils]: directory is created at artifacts\base_model
+[2021-11-14 19:29:51,205: INFO: models]: inception_v3 model saved at: artifacts\base_model\inception_base_model.h5
+[2021-11-14 19:29:51,228: INFO: stage_03_prepare_base_model]: encoding start
+[2021-11-14 19:29:51,228: INFO: stage_03_prepare_base_model]: encoding done
+[2021-11-14 19:29:51,228: INFO: stage_03_prepare_base_model]: strated creating the train_features folder and stored in picke directory
+[2021-11-14 19:29:51,228: INFO: all_utils]: directory is created at data\Pickle
+[2021-11-14 19:29:51,229: ERROR: stage_03_prepare_base_model]: invalid mode: 'W'
+Traceback (most recent call last):
+  File "src/stage_03_prepare_base_model.py", line 74, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_03_prepare_base_model.py", line 58, in prepare_base_model
+    with open(os.path.join(Train_feature_path,TRAIN_FEATURES_FILE_NAME), "W") as encoded_pickle:
+ValueError: invalid mode: 'W'
+[2021-11-14 19:30:13,624: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-14 19:30:13,673: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-14 19:30:13,674: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-14 19:30:13,674: INFO: all_utils]: directory is created at artifacts\base_model
+[2021-11-14 19:30:16,653: INFO: models]: inception_v3 model saved at: artifacts\base_model\inception_base_model.h5
+[2021-11-14 19:30:16,676: INFO: stage_03_prepare_base_model]: encoding start
+[2021-11-14 19:30:16,676: INFO: stage_03_prepare_base_model]: encoding done
+[2021-11-14 19:30:16,676: INFO: stage_03_prepare_base_model]: strated creating the train_features folder and stored in picke directory
+[2021-11-14 19:30:16,677: INFO: all_utils]: directory is created at data\Pickle
+[2021-11-14 19:30:16,677: INFO: stage_03_prepare_base_model]: stored encoded trained features
+[2021-11-14 19:30:16,678: INFO: stage_03_prepare_base_model]: stage three completed !! base model is created 
+ >>>>>>>>>>>>
+[2021-11-14 20:10:55,850: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage two started
+[2021-11-14 20:10:55,852: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-14 20:10:55,852: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-14 20:10:55,857: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-14 20:10:55,882: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-14 20:10:55,882: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-14 20:10:56,112: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-14 20:10:56,112: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-14 20:10:56,146: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-14 20:10:56,897: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-14 20:10:57,269: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-14 20:10:57,269: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-14 20:10:57,271: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-14 20:10:57,271: INFO: text_img_data_preparation]: started finding vocab size and maximum length
+[2021-11-14 20:10:57,336: INFO: text_img_data_preparation]: finding vocab_size max_len is completed
+[2021-11-14 20:10:57,337: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-14 20:10:57,337: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-14 20:10:57,337: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-14 20:10:57,338: INFO: all_utils]: directory is created at prepaired_data/train_img
+[2021-11-14 20:10:57,338: INFO: all_utils]: directory is created at prepaired_data/test_img
+[2021-11-14 20:10:57,338: INFO: stage_02_data_preparation]: started writing the prepared vocab_size in the vocab_size.txt file 
+[2021-11-14 20:10:57,338: INFO: stage_02_data_preparation]: prepared data  written succesfully in the vocab_size.txt file and stored in the prepaired_data/vocab_size_dir dir 
+[2021-11-14 20:10:57,339: INFO: stage_02_data_preparation]: started writing the prepared max_length in the max_length.txt file 
+[2021-11-14 20:10:57,339: INFO: stage_02_data_preparation]: prepared data  written succesfully in the max_length.txt file and stored in the prepaired_data/max_length_dir dir 
+[2021-11-14 20:10:57,339: INFO: stage_02_data_preparation]: started writing the prepared wordtoix in the wordtoix.txt file 
+[2021-11-14 20:10:57,340: INFO: stage_02_data_preparation]: prepared data  written succesfully in the wordtoix.txt file and stored in the prepaired_data/wordtoix_dir dir 
+[2021-11-14 20:10:57,340: INFO: stage_02_data_preparation]: started writing the prepared train_img in the train_img.txt file 
+[2021-11-14 20:10:57,343: INFO: stage_02_data_preparation]: prepared data  written succesfully in the train_img.txt file and stored in the prepaired_data/train_img dir 
+[2021-11-14 20:10:57,343: INFO: stage_02_data_preparation]: started writing the prepared test_img in the test_img.txt file 
+[2021-11-14 20:10:57,346: INFO: stage_02_data_preparation]: prepared data  written succesfully in the test_img.txt file and stored in the prepaired_data/test_img dir 
+[2021-11-14 20:10:57,350: INFO: stage_02_data_preparation]: stage two completed !! all the img_text_data prepartion done and stored 
+ >>>>>>>>>>>>
+[2021-11-14 20:13:20,035: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage two started
+[2021-11-14 20:13:20,037: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-14 20:13:20,038: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-14 20:13:20,040: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-14 20:13:20,068: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-14 20:13:20,068: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-14 20:13:20,299: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-14 20:13:20,299: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-14 20:13:20,333: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-14 20:13:20,816: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-14 20:13:21,220: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-14 20:13:21,220: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-14 20:13:21,222: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-14 20:13:21,222: INFO: text_img_data_preparation]: started finding vocab size and maximum length
+[2021-11-14 20:13:21,288: INFO: text_img_data_preparation]: finding vocab_size max_len is completed
+[2021-11-14 20:13:21,289: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-14 20:13:21,289: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-14 20:13:21,289: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-14 20:13:21,289: INFO: all_utils]: directory is created at prepaired_data/train_img
+[2021-11-14 20:13:21,290: INFO: all_utils]: directory is created at prepaired_data/test_img
+[2021-11-14 20:13:21,290: INFO: stage_02_data_preparation]: started writing the prepared vocab_size in the vocab_size.txt file 
+[2021-11-14 20:13:21,290: INFO: stage_02_data_preparation]: prepared data  written succesfully in the vocab_size.txt file and stored in the prepaired_data/vocab_size_dir dir 
+[2021-11-14 20:13:21,290: INFO: stage_02_data_preparation]: started writing the prepared max_length in the max_length.txt file 
+[2021-11-14 20:13:21,290: INFO: stage_02_data_preparation]: prepared data  written succesfully in the max_length.txt file and stored in the prepaired_data/max_length_dir dir 
+[2021-11-14 20:13:21,291: INFO: stage_02_data_preparation]: started writing the prepared wordtoix in the wordtoix.txt file 
+[2021-11-14 20:13:21,291: INFO: stage_02_data_preparation]: prepared data  written succesfully in the wordtoix.txt file and stored in the prepaired_data/wordtoix_dir dir 
+[2021-11-14 20:13:21,292: INFO: stage_02_data_preparation]: started writing the prepared train_img in the train_img.txt file 
+[2021-11-14 20:13:21,295: INFO: stage_02_data_preparation]: prepared data  written succesfully in the train_img.txt file and stored in the prepaired_data/train_img dir 
+[2021-11-14 20:13:21,296: INFO: stage_02_data_preparation]: started writing the prepared test_img in the test_img.txt file 
+[2021-11-14 20:13:21,296: INFO: stage_02_data_preparation]: prepared data  written succesfully in the test_img.txt file and stored in the prepaired_data/test_img dir 
+[2021-11-14 20:13:21,300: INFO: stage_02_data_preparation]: stage two completed !! all the img_text_data prepartion done and stored 
+ >>>>>>>>>>>>
+[2021-11-14 20:15:46,459: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-14 20:15:46,514: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-14 20:15:46,514: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-14 20:15:46,514: INFO: all_utils]: directory is created at artifacts\base_model
+[2021-11-14 20:15:49,520: INFO: models]: inception_v3 model saved at: artifacts\base_model\inception_base_model.h5
+[2021-11-14 20:15:49,545: INFO: stage_03_prepare_base_model]: encoding start
+[2021-11-14 20:15:49,545: INFO: stage_03_prepare_base_model]: encoding done
+[2021-11-14 20:15:49,545: INFO: stage_03_prepare_base_model]: strated creating the train_features folder and stored in picke directory
+[2021-11-14 20:15:49,545: INFO: stage_03_prepare_base_model]: stored encoded trained features
+[2021-11-14 20:15:49,546: INFO: stage_03_prepare_base_model]: stage three completed !! base model is created 
+ >>>>>>>>>>>>
+[2021-11-14 20:17:32,187: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-14 20:17:32,238: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-14 20:17:32,238: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-14 20:17:32,239: INFO: all_utils]: directory is created at artifacts\base_model
+[2021-11-14 20:17:35,242: INFO: models]: inception_v3 model saved at: artifacts\base_model\inception_base_model.h5
+[2021-11-14 20:17:35,266: INFO: stage_03_prepare_base_model]: encoding start
+[2021-11-14 20:17:35,266: INFO: stage_03_prepare_base_model]: encoding done
+[2021-11-14 20:17:35,266: INFO: stage_03_prepare_base_model]: strated creating the train_features folder and stored in picke directory
+[2021-11-14 20:17:35,266: INFO: stage_03_prepare_base_model]: stored encoded trained features
+[2021-11-14 20:17:35,268: INFO: stage_03_prepare_base_model]: stage three completed !! base model is created 
+ >>>>>>>>>>>>

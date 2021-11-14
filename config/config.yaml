@@ -13,6 +13,10 @@ artifacts:
    TEXT_DATA: Flickr8k_text
    TOKEN_PATH_NAME: Flickr8k.token.txt
    TRAIN_PATH: Flickr_8k.trainImages.txt
+   TEST_PATH: Flickr_8k.testImages.txt
+   PICKLE: Pickle
+   TRAIN_FEATURES_FILE_NAME: encoded_train_images.pkl 
+   TEST_FEATURES_FILE_NAME: encoded_test_images.pkl 
 
 source_download_path:
    - ../data/Flicker8k_Dataset
@@ -29,3 +33,4 @@ prepaired_data_dir:
    - prepaired_data/max_length_dir
    - prepaired_data/wordtoix_dir     
    - prepaired_data/train_img
+   - prepaired_data/test_img

@@ -4,6 +4,7 @@ from keras.preprocessing import image
 from keras.applications.inception_v3 import preprocess_input
 import ast
 import argparse
+import time
 import pandas as pd
 import os
 import shutil
@@ -11,7 +12,7 @@ from tqdm import tqdm
 import logging
 import io
 import numpy as np
-
+import pickle
 logging_str="[%(asctime)s: %(levelname)s: %(module)s]: %(message)s"
 log_dir="logs"
 os.makedirs(log_dir,exist_ok=True)
@@ -36,18 +37,53 @@ def prepare_base_model(config_path,params_path):
     base_model=get_inception_v3_model(model_path=base_model_path)
     model=prepare_model(base_model)
     images=os.path.join(artifacts["DATA_DIR"],artifacts["TEXT_DATA"],artifacts["TRAIN_PATH"])
+    print(images)
     file=open("prepaired_data/train_img/train_img.txt","r")
     train_img=[]
     train_img.append(file.read())
     file.close()
     train_img=ast.literal_eval(train_img[0])
-    print(len(train_img))
+    
+    file=open("prepaired_data/test_img/test_img.txt","r")
+    test_img=[]
+    test_img.append(file.read())
+    file.close()
+    test_img=ast.literal_eval(test_img[0])
+    
     encoding_train = {}
-    logging.info("encoding start")
+    encoding_test={}
+    logging.info("encoding start for train")
+    start = time()
     for img in train_img:
         encoding_train[img[len(images+'/'):]] = encode(img,model)
-    logging.info("encoding done")    
-    print(encoding_train)    
+        
+    logging.info(f"train img encoded and time taken is {time()-start}")     
+    
+    logging.info("encoding start for test")  
+    start=time()
+    for img in test_img:
+        encoding_test[img[len(images+'/'):]] = encode(img,model)
+    logging.info(f"test img encoded and time taken is {time()-start} ") 
+    
+    data_dir=artifacts["DATA_DIR"]
+    PICKLE_DIR=artifacts["PICKLE"]
+    feature_path=os.path.join(data_dir,PICKLE_DIR) 
+    create_directory([feature_path]) 
+    
+    logging.info("strated creating the train_features folder and stored in picke directory")
+    TRAIN_FEATURES_FILE_NAME=artifacts["TRAIN_FEATURES_FILE_NAME"]
+    with open(os.path.join(feature_path,TRAIN_FEATURES_FILE_NAME), "wb") as encoded_pickle:
+        pickle.dump(encoding_train, encoded_pickle)
+    logging.info("stored encoded trained features") 
+    
+    logging.info("strated creating the test_features folder and stored in picke directory") 
+    TEST_FEATURES_FILE_NAME= artifacts["TEST_FEATURES_FILE_NAME"]  
+    with open(os.path.join(feature_path,TEST_FEATURES_FILE_NAME), "wb") as encoded_pickle:
+        pickle.dump(encoding_test, encoded_pickle)
+    logging.info("stored encoded test features")     
+        
+ 
+      
     
     
     
