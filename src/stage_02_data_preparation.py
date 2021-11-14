@@ -32,24 +32,29 @@ def data_preparation(config_path,params_path):
     img=glob.glob(img_path+'/'+'*.jpg')
     
     train_path=os.path.join(artifacts["DATA_DIR"],artifacts["TEXT_DATA"],artifacts["TRAIN_PATH"])
-    
+    test_path=os.path.join(artifacts["DATA_DIR"],artifacts["TEXT_DATA"],artifacts["TEST_PATH"])
     train_images = open(train_path, 'r', encoding = 'utf-8').read().split("\n")
+    test_images = open(test_path, 'r', encoding = 'utf-8').read().split("\n")
     
     # train_img=prepare_train_images(train_path+'/',img,train_images)
-    train_img = []  
+    train_img = [] 
+    test_img=[] 
     for im in img:
         if(im[len(img_path+'/'):] in train_images):
             train_img.append(im)
+    for im in img:
+        if(im[len(img_path+'/'):] in test_images):
+            test_img.append(im)        
     train_descriptions = load_clean_descriptions(descriptions, train_images)
     train_caption=train_captions(train_descriptions)
     vocab_size ,max_length,wordtoix=find_vocab_size_max_len(vocab,train_caption)
-    lis_of_data=[vocab_size,max_length,wordtoix,train_img]
+    lis_of_data=[vocab_size,max_length,wordtoix,train_img,test_img]
     
     prepaired_data_dirs=config["prepaired_data_dir"]
     for local_dir in (prepaired_data_dirs):
         create_directory([local_dir])
         
-    lis_of_data_name=['vocab_size','max_length','wordtoix','train_img']     
+    lis_of_data_name=['vocab_size','max_length','wordtoix','train_img','test_img']     
     for local_dir,data_path,data in zip(prepaired_data_dirs,lis_of_data_name,lis_of_data):
         file1 = open(local_dir+'/'+data_path+'.txt','w')  
         logging.info(f"started writing the prepared {data_path} in the {data_path+'.txt'} file ")    
