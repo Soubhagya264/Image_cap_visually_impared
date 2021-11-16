@@ -48,13 +48,13 @@ def data_preparation(config_path,params_path):
     train_descriptions = load_clean_descriptions(descriptions, train_images)
     train_caption=train_captions(train_descriptions)
     vocab_size ,max_length,wordtoix=find_vocab_size_max_len(vocab,train_caption)
-    lis_of_data=[vocab_size,max_length,wordtoix,train_img,test_img]
+    lis_of_data=[vocab_size,max_length,wordtoix,train_img,test_img,train_descriptions]
     
     prepaired_data_dirs=config["prepaired_data_dir"]
     for local_dir in (prepaired_data_dirs):
         create_directory([local_dir])
         
-    lis_of_data_name=['vocab_size','max_length','wordtoix','train_img','test_img']     
+    lis_of_data_name=['vocab_size','max_length','wordtoix','train_img','test_img','train_descriptions']     
     for local_dir,data_path,data in zip(prepaired_data_dirs,lis_of_data_name,lis_of_data):
         file1 = open(local_dir+'/'+data_path+'.txt','w')  
         logging.info(f"started writing the prepared {data_path} in the {data_path+'.txt'} file ")    

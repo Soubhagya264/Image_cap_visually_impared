@@ -2357,3 +2357,213 @@ ValueError: invalid mode: 'W'
 [2021-11-14 20:17:35,266: INFO: stage_03_prepare_base_model]: stored encoded trained features
 [2021-11-14 20:17:35,268: INFO: stage_03_prepare_base_model]: stage three completed !! base model is created 
  >>>>>>>>>>>>
+[2021-11-14 21:53:25,230: INFO: stage_04_prepare_callbacks]: 
+ >>>>>>>>>> stage four started
+[2021-11-14 21:53:25,232: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-14 21:53:25,232: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-14 21:53:25,232: INFO: all_utils]: directory is created at artifacts\Tensorboard_log_dir
+[2021-11-14 21:53:25,233: INFO: all_utils]: directory is created at artifacts\checkpoints
+[2021-11-14 21:53:25,233: INFO: all_utils]: directory is created at artifacts\callbacks
+[2021-11-14 21:53:26,425: INFO: callbacks]: tensorboard callback is being saved at artifacts\callbacks\tb_cb.cb
+[2021-11-14 21:53:26,427: INFO: callbacks]: tensorboard callback is being saved at artifacts\callbacks\checkpoint_cb.cb
+[2021-11-14 21:53:26,427: INFO: stage_04_prepare_callbacks]: stage four completed !! callbacks are prepaired 
+ >>>>>>>>>>>>
+[2021-11-16 12:29:50,829: INFO: stage_05_training_model]: 
+ >>>>>>>>>> stage five started
+[2021-11-16 12:29:50,833: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 12:29:50,833: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 12:29:50,834: INFO: stage_05_training_model]: stage five completed !! model trained 
+ >>>>>>>>>>>>
+[2021-11-16 12:32:43,587: INFO: stage_05_training_model]: 
+ >>>>>>>>>> stage five started
+[2021-11-16 12:32:43,591: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 12:32:43,591: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 12:32:44,939: INFO: stage_05_training_model]: stage five completed !! model trained 
+ >>>>>>>>>>>>
+[2021-11-16 13:27:21,973: INFO: stage_05_training_model]: 
+ >>>>>>>>>> stage five started
+[2021-11-16 13:27:21,976: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 13:27:21,976: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 13:27:22,048: INFO: stage_05_training_model]: stage five completed !! model trained 
+ >>>>>>>>>>>>
+[2021-11-16 13:31:50,026: INFO: stage_05_training_model]: 
+ >>>>>>>>>> stage five started
+[2021-11-16 13:31:50,029: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 13:31:50,029: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 13:31:50,099: ERROR: stage_05_training_model]: name 'vocab_size' is not defined
+Traceback (most recent call last):
+  File "src/stage_05_training_model.py", line 38, in <module>
+    train_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_05_training_model.py", line 29, in train_model
+    print(lis[vocab_size])
+NameError: name 'vocab_size' is not defined
+[2021-11-16 13:32:00,687: INFO: stage_05_training_model]: 
+ >>>>>>>>>> stage five started
+[2021-11-16 13:32:00,690: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 13:32:00,690: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 13:32:00,756: ERROR: stage_05_training_model]: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "src/stage_05_training_model.py", line 38, in <module>
+    train_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_05_training_model.py", line 29, in train_model
+    print(lis["vocab_size"])
+TypeError: list indices must be integers or slices, not str
+[2021-11-16 13:32:31,565: INFO: stage_05_training_model]: 
+ >>>>>>>>>> stage five started
+[2021-11-16 13:32:31,568: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 13:32:31,568: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 13:32:31,635: INFO: stage_05_training_model]: stage five completed !! model trained 
+ >>>>>>>>>>>>
+[2021-11-16 13:33:06,396: INFO: stage_05_training_model]: 
+ >>>>>>>>>> stage five started
+[2021-11-16 13:33:06,399: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 13:33:06,400: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 13:33:06,461: ERROR: stage_05_training_model]: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "src/stage_05_training_model.py", line 38, in <module>
+    train_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_05_training_model.py", line 29, in train_model
+    print(lis['vocab_size_dir'])
+TypeError: list indices must be integers or slices, not str
+[2021-11-16 13:33:16,906: INFO: stage_05_training_model]: 
+ >>>>>>>>>> stage five started
+[2021-11-16 13:33:16,909: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 13:33:16,909: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 13:33:16,971: ERROR: stage_05_training_model]: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "src/stage_05_training_model.py", line 38, in <module>
+    train_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_05_training_model.py", line 29, in train_model
+    print(lis['vocab_size_dir'])
+TypeError: list indices must be integers or slices, not str
+[2021-11-16 13:34:05,063: INFO: stage_05_training_model]: 
+ >>>>>>>>>> stage five started
+[2021-11-16 13:34:05,066: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 13:34:05,066: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 13:34:05,134: INFO: stage_05_training_model]: stage five completed !! model trained 
+ >>>>>>>>>>>>
+[2021-11-16 13:36:14,548: INFO: stage_05_training_model]: 
+ >>>>>>>>>> stage five started
+[2021-11-16 13:36:14,551: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 13:36:14,551: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 13:36:14,623: INFO: stage_05_training_model]: stage five completed !! model trained 
+ >>>>>>>>>>>>
+[2021-11-16 13:38:46,356: INFO: stage_05_training_model]: 
+ >>>>>>>>>> stage five started
+[2021-11-16 13:38:46,359: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 13:38:46,359: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 13:38:46,424: ERROR: stage_05_training_model]: invalid literal for int() with base 10: "{'startseq': 1, 'child': 2, 'in': 3, 'pink': 4, 'dress': 5, 'is': 6, 'climbing': 7, 'up': 8, 'set': 9, 'of': 10, 'stairs': 11, 'an': 12, 'way': 13, 'endseq': 14, 'girl': 15, 'going': 16, 'into': 17, 
+Traceback (most recent call last):
+  File "src/stage_05_training_model.py", line 48, in <module>
+    train_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_05_training_model.py", line 34, in train_model
+    wordtoix=int(file.read())
+ValueError: invalid literal for int() with base 10: "{'startseq': 1, 'child': 2, 'in': 3, 'pink': 4, 'dress': 5, 'is': 6, 'climbing': 7, 'up': 8, 'set': 9, 'of': 10, 'stairs': 11, 'an': 12, 'way': 13, 'endseq': 14, 'girl': 15, 'going': 16, 'into': 17, 
+[2021-11-16 13:39:02,219: INFO: stage_05_training_model]: 
+ >>>>>>>>>> stage five started
+[2021-11-16 13:39:02,222: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 13:39:02,222: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 13:39:02,289: INFO: stage_05_training_model]: stage five completed !! model trained 
+ >>>>>>>>>>>>
+[2021-11-16 13:40:39,218: INFO: stage_05_training_model]: 
+ >>>>>>>>>> stage five started
+[2021-11-16 13:40:39,221: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 13:40:39,221: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 13:40:39,293: INFO: stage_05_training_model]: stage five completed !! model trained 
+ >>>>>>>>>>>>
+[2021-11-16 13:41:11,017: INFO: stage_05_training_model]: 
+ >>>>>>>>>> stage five started
+[2021-11-16 13:41:11,020: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 13:41:11,020: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 13:41:11,115: INFO: stage_05_training_model]: stage five completed !! model trained 
+ >>>>>>>>>>>>
+[2021-11-16 13:46:35,033: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage two started
+[2021-11-16 13:46:35,035: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 13:46:35,035: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 13:46:35,041: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-16 13:46:35,066: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-16 13:46:35,066: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-16 13:46:35,299: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-16 13:46:35,299: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-16 13:46:35,332: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-16 13:46:35,815: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-16 13:46:36,177: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-16 13:46:36,177: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-16 13:46:36,178: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-16 13:46:36,178: INFO: text_img_data_preparation]: started finding vocab size and maximum length
+[2021-11-16 13:46:36,241: INFO: text_img_data_preparation]: finding vocab_size max_len is completed
+[2021-11-16 13:46:36,242: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-16 13:46:36,242: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-16 13:46:36,242: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-16 13:46:36,242: INFO: all_utils]: directory is created at prepaired_data/train_img
+[2021-11-16 13:46:36,243: INFO: all_utils]: directory is created at prepaired_data/test_img
+[2021-11-16 13:46:36,243: INFO: all_utils]: directory is created at prepaired_data/train_descriptions
+[2021-11-16 13:46:36,243: INFO: stage_02_data_preparation]: started writing the prepared vocab_size in the vocab_size.txt file 
+[2021-11-16 13:46:36,243: INFO: stage_02_data_preparation]: prepared data  written succesfully in the vocab_size.txt file and stored in the prepaired_data/vocab_size_dir dir 
+[2021-11-16 13:46:36,244: INFO: stage_02_data_preparation]: started writing the prepared max_length in the max_length.txt file 
+[2021-11-16 13:46:36,244: INFO: stage_02_data_preparation]: prepared data  written succesfully in the max_length.txt file and stored in the prepaired_data/max_length_dir dir 
+[2021-11-16 13:46:36,244: INFO: stage_02_data_preparation]: started writing the prepared wordtoix in the wordtoix.txt file 
+[2021-11-16 13:46:36,245: INFO: stage_02_data_preparation]: prepared data  written succesfully in the wordtoix.txt file and stored in the prepaired_data/wordtoix_dir dir 
+[2021-11-16 13:46:36,245: INFO: stage_02_data_preparation]: started writing the prepared train_img in the train_img.txt file 
+[2021-11-16 13:46:36,248: INFO: stage_02_data_preparation]: prepared data  written succesfully in the train_img.txt file and stored in the prepaired_data/train_img dir 
+[2021-11-16 13:46:36,251: INFO: stage_02_data_preparation]: started writing the prepared test_img in the test_img.txt file 
+[2021-11-16 13:46:36,251: INFO: stage_02_data_preparation]: prepared data  written succesfully in the test_img.txt file and stored in the prepaired_data/test_img dir 
+[2021-11-16 13:46:36,252: INFO: stage_02_data_preparation]: started writing the prepared train_descriptions in the train_descriptions.txt file 
+[2021-11-16 13:46:36,274: INFO: stage_02_data_preparation]: prepared data  written succesfully in the train_descriptions.txt file and stored in the prepaired_data/train_descriptions dir 
+[2021-11-16 13:46:36,278: INFO: stage_02_data_preparation]: stage two completed !! all the img_text_data prepartion done and stored 
+ >>>>>>>>>>>>
+[2021-11-16 13:48:47,645: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage two started
+[2021-11-16 13:48:47,648: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 13:48:47,648: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 13:48:47,651: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-16 13:48:47,675: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-16 13:48:47,675: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-16 13:48:47,899: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-16 13:48:47,899: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-16 13:48:47,934: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-16 13:48:48,413: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-16 13:48:48,775: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-16 13:48:48,775: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-16 13:48:48,777: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-16 13:48:48,777: INFO: text_img_data_preparation]: started finding vocab size and maximum length
+[2021-11-16 13:48:48,839: INFO: text_img_data_preparation]: finding vocab_size max_len is completed
+[2021-11-16 13:48:48,839: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-16 13:48:48,840: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-16 13:48:48,840: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-16 13:48:48,840: INFO: all_utils]: directory is created at prepaired_data/train_img
+[2021-11-16 13:48:48,840: INFO: all_utils]: directory is created at prepaired_data/test_img
+[2021-11-16 13:48:48,841: INFO: all_utils]: directory is created at prepaired_data/train_descriptions_dir
+[2021-11-16 13:48:48,841: INFO: stage_02_data_preparation]: started writing the prepared vocab_size in the vocab_size.txt file 
+[2021-11-16 13:48:48,841: INFO: stage_02_data_preparation]: prepared data  written succesfully in the vocab_size.txt file and stored in the prepaired_data/vocab_size_dir dir 
+[2021-11-16 13:48:48,842: INFO: stage_02_data_preparation]: started writing the prepared max_length in the max_length.txt file 
+[2021-11-16 13:48:48,842: INFO: stage_02_data_preparation]: prepared data  written succesfully in the max_length.txt file and stored in the prepaired_data/max_length_dir dir 
+[2021-11-16 13:48:48,842: INFO: stage_02_data_preparation]: started writing the prepared wordtoix in the wordtoix.txt file 
+[2021-11-16 13:48:48,842: INFO: stage_02_data_preparation]: prepared data  written succesfully in the wordtoix.txt file and stored in the prepaired_data/wordtoix_dir dir 
+[2021-11-16 13:48:48,843: INFO: stage_02_data_preparation]: started writing the prepared train_img in the train_img.txt file 
+[2021-11-16 13:48:48,846: INFO: stage_02_data_preparation]: prepared data  written succesfully in the train_img.txt file and stored in the prepaired_data/train_img dir 
+[2021-11-16 13:48:48,846: INFO: stage_02_data_preparation]: started writing the prepared test_img in the test_img.txt file 
+[2021-11-16 13:48:48,847: INFO: stage_02_data_preparation]: prepared data  written succesfully in the test_img.txt file and stored in the prepaired_data/test_img dir 
+[2021-11-16 13:48:48,847: INFO: stage_02_data_preparation]: started writing the prepared train_descriptions in the train_descriptions.txt file 
+[2021-11-16 13:48:48,868: INFO: stage_02_data_preparation]: prepared data  written succesfully in the train_descriptions.txt file and stored in the prepaired_data/train_descriptions_dir dir 
+[2021-11-16 13:48:48,871: INFO: stage_02_data_preparation]: stage two completed !! all the img_text_data prepartion done and stored 
+ >>>>>>>>>>>>
+[2021-11-16 13:50:20,718: INFO: stage_05_training_model]: 
+ >>>>>>>>>> stage five started
+[2021-11-16 13:50:20,721: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 13:50:20,721: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 13:50:22,060: INFO: stage_05_training_model]: stage five completed !! model trained 
+ >>>>>>>>>>>>
+[2021-11-16 14:09:50,202: INFO: stage_05_training_model]: 
+ >>>>>>>>>> stage five started
+[2021-11-16 14:09:50,206: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 14:09:50,206: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 14:10:04,193: INFO: stage_05_training_model]: stage five completed !! model trained 
+ >>>>>>>>>>>>
+[2021-11-16 15:24:12,093: INFO: stage_05_training_model]: 
+ >>>>>>>>>> stage five started
+[2021-11-16 15:24:12,097: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 15:24:12,097: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 15:24:21,253: INFO: stage_05_training_model]: stage five completed !! model trained 
+ >>>>>>>>>>>>

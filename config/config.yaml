@@ -14,6 +14,8 @@ artifacts:
    TOKEN_PATH_NAME: Flickr8k.token.txt
    TRAIN_PATH: Flickr_8k.trainImages.txt
    TEST_PATH: Flickr_8k.testImages.txt
+   GLOVE_DIR: glove 
+   GLOVE_FILE: glove.6B.200d.txt
    PICKLE: Pickle
    TRAIN_FEATURES_FILE_NAME: encoded_train_images.pkl 
    TEST_FEATURES_FILE_NAME: encoded_test_images.pkl 
@@ -22,11 +24,13 @@ source_download_path:
    - ../data/Flicker8k_Dataset
    - ../data/Flickr8k_text
    - ../data/Pickle
+   - ../data/glove
 
 local_data_dirs:
    - data/Flicker8k_Dataset
    - data/Flickr8k_text
    - data/Pickle  
+   - data/glove
 
 prepaired_data_dir:
    - prepaired_data/vocab_size_dir
@@ -34,3 +38,4 @@ prepaired_data_dir:
    - prepaired_data/wordtoix_dir     
    - prepaired_data/train_img
    - prepaired_data/test_img
+   - prepaired_data/train_descriptions_dir
