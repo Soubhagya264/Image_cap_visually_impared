@@ -1,6 +1,6 @@
 artifacts:
    ARTIFACTS_DIR: artifacts
-   TRINED_MODEL_DIR: model
+   TRAINED_MODEL_DIR: model
    BASE_MODEL_DIR: base_model
    BASE_MODEL_NAME: inception_base_model.h5
    UPDATED_BASE_MODEL_NAME: updated_inception_base_model.h5

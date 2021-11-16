@@ -25,3 +25,9 @@ def preprocess(image_path):
     x=np.expand_dims(x,axis=0)
     x=preprocess_input(x)
     return x
+
+def get_unique_path_to_save_model(trained_model_dir, model_name="model"):
+    timestamp = get_time_stamp(model_name)
+    unique_model_name = f"{timestamp}_.h5"
+    unique_model_path = os.path.join(trained_model_dir, unique_model_name)
+    return unique_model_path  

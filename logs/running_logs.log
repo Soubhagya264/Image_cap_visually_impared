@@ -2567,3 +2567,148 @@ ValueError: invalid literal for int() with base 10: "{'startseq': 1, 'child': 2,
 [2021-11-16 15:24:12,097: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
 [2021-11-16 15:24:21,253: INFO: stage_05_training_model]: stage five completed !! model trained 
  >>>>>>>>>>>>
+[2021-11-16 19:41:50,387: INFO: stage_05_training_model]: 
+ >>>>>>>>>> stage five started
+[2021-11-16 19:41:50,391: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 19:41:50,391: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 19:50:05,828: INFO: stage_05_training_model]: 
+ >>>>>>>>>> stage five started
+[2021-11-16 19:50:05,831: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 19:50:05,832: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 19:50:33,934: INFO: stage_05_training_model]: stage five completed !! model trained 
+ >>>>>>>>>>>>
+[2021-11-16 20:30:19,696: INFO: stage_05_training_model]: 
+ >>>>>>>>>> stage five started
+[2021-11-16 20:30:19,699: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 20:30:19,700: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 20:30:19,855: INFO: stage_05_training_model]: Extracted Input Features
+[2021-11-16 20:30:45,960: INFO: stage_05_training_model]: Embedding matrix created
+[2021-11-16 20:30:45,962: INFO: callbacks]: saved callbacks are loaded from artifacts\callbacks
+[2021-11-16 20:30:45,962: INFO: stage_05_training_model]: training started
+[2021-11-16 20:30:48,478: INFO: stage_05_training_model]:  full model summary 
+ Model: "model"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_2 (InputLayer)            [(None, 34)]         0                                            
+__________________________________________________________________________________________________
+input_1 (InputLayer)            [(None, 2048)]       0                                            
+__________________________________________________________________________________________________
+embedding (Embedding)           (None, 34, 200)      330400      input_2[0][0]                    
+__________________________________________________________________________________________________
+dropout (Dropout)               (None, 2048)         0           input_1[0][0]                    
+__________________________________________________________________________________________________
+dropout_1 (Dropout)             (None, 34, 200)      0           embedding[0][0]                  
+__________________________________________________________________________________________________
+dense (Dense)                   (None, 256)          524544      dropout[0][0]                    
+__________________________________________________________________________________________________
+lstm (LSTM)                     (None, 256)          467968      dropout_1[0][0]                  
+__________________________________________________________________________________________________
+add (Add)                       (None, 256)          0           dense[0][0]                      
+                                                                 lstm[0][0]                       
+__________________________________________________________________________________________________
+dense_1 (Dense)                 (None, 256)          65792       add[0][0]                        
+__________________________________________________________________________________________________
+dense_2 (Dense)                 (None, 1652)         424564      dense_1[0][0]                    
+==================================================================================================
+Total params: 1,813,268
+Trainable params: 1,482,868
+Non-trainable params: 330,400
+__________________________________________________________________________________________________
+
+[2021-11-16 20:30:48,487: INFO: stage_05_training_model]: training completed
+[2021-11-16 20:30:48,487: ERROR: stage_05_training_model]: 'TRAINED_MODEL_DIR'
+Traceback (most recent call last):
+  File "src/stage_05_training_model.py", line 124, in <module>
+    train_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_05_training_model.py", line 111, in train_model
+    trained_model_dir = os.path.join(artifacts_dir, artifacts["TRAINED_MODEL_DIR"])
+KeyError: 'TRAINED_MODEL_DIR'
+[2021-11-16 20:31:58,803: INFO: stage_05_training_model]: 
+ >>>>>>>>>> stage five started
+[2021-11-16 20:31:58,807: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 20:31:58,808: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 20:31:58,997: INFO: stage_05_training_model]: Extracted Input Features
+[2021-11-16 20:32:25,941: INFO: stage_05_training_model]: Embedding matrix created
+[2021-11-16 20:32:25,942: INFO: callbacks]: saved callbacks are loaded from artifacts\callbacks
+[2021-11-16 20:32:25,942: INFO: stage_05_training_model]: training started
+[2021-11-16 20:32:27,965: INFO: stage_05_training_model]:  full model summary 
+ Model: "model"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_2 (InputLayer)            [(None, 34)]         0                                            
+__________________________________________________________________________________________________
+input_1 (InputLayer)            [(None, 2048)]       0                                            
+__________________________________________________________________________________________________
+embedding (Embedding)           (None, 34, 200)      330400      input_2[0][0]                    
+__________________________________________________________________________________________________
+dropout (Dropout)               (None, 2048)         0           input_1[0][0]                    
+__________________________________________________________________________________________________
+dropout_1 (Dropout)             (None, 34, 200)      0           embedding[0][0]                  
+__________________________________________________________________________________________________
+dense (Dense)                   (None, 256)          524544      dropout[0][0]                    
+__________________________________________________________________________________________________
+lstm (LSTM)                     (None, 256)          467968      dropout_1[0][0]                  
+__________________________________________________________________________________________________
+add (Add)                       (None, 256)          0           dense[0][0]                      
+                                                                 lstm[0][0]                       
+__________________________________________________________________________________________________
+dense_1 (Dense)                 (None, 256)          65792       add[0][0]                        
+__________________________________________________________________________________________________
+dense_2 (Dense)                 (None, 1652)         424564      dense_1[0][0]                    
+==================================================================================================
+Total params: 1,813,268
+Trainable params: 1,482,868
+Non-trainable params: 330,400
+__________________________________________________________________________________________________
+
+[2021-11-16 20:32:27,970: INFO: stage_05_training_model]: training completed
+[2021-11-16 20:32:27,972: INFO: all_utils]: directory is created at artifacts\model
+[2021-11-16 20:32:27,997: INFO: stage_05_training_model]: trained model is saved at: artifacts\model\model_at_Tue_Nov_16_20_32_27_2021_.h5
+[2021-11-16 20:32:28,402: INFO: stage_05_training_model]: stage five completed !! model trained 
+ >>>>>>>>>>>>
+[2021-11-16 20:59:54,720: INFO: stage_05_training_model]: 
+ >>>>>>>>>> stage five started
+[2021-11-16 20:59:54,724: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-16 20:59:54,724: INFO: all_utils]: Yaml file :params.yaml lodded sucessfully
+[2021-11-16 20:59:54,880: INFO: stage_05_training_model]: Extracted Input Features
+[2021-11-16 21:00:23,399: INFO: stage_05_training_model]: Embedding matrix created
+[2021-11-16 21:00:23,412: INFO: callbacks]: saved callbacks are loaded from artifacts\callbacks
+[2021-11-16 21:00:23,412: INFO: stage_05_training_model]: training started
+[2021-11-16 21:00:25,552: INFO: stage_05_training_model]:  full model summary 
+ Model: "model"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_2 (InputLayer)            [(None, 34)]         0                                            
+__________________________________________________________________________________________________
+input_1 (InputLayer)            [(None, 2048)]       0                                            
+__________________________________________________________________________________________________
+embedding (Embedding)           (None, 34, 200)      330400      input_2[0][0]                    
+__________________________________________________________________________________________________
+dropout (Dropout)               (None, 2048)         0           input_1[0][0]                    
+__________________________________________________________________________________________________
+dropout_1 (Dropout)             (None, 34, 200)      0           embedding[0][0]                  
+__________________________________________________________________________________________________
+dense (Dense)                   (None, 256)          524544      dropout[0][0]                    
+__________________________________________________________________________________________________
+lstm (LSTM)                     (None, 256)          467968      dropout_1[0][0]                  
+__________________________________________________________________________________________________
+add (Add)                       (None, 256)          0           dense[0][0]                      
+                                                                 lstm[0][0]                       
+__________________________________________________________________________________________________
+dense_1 (Dense)                 (None, 256)          65792       add[0][0]                        
+__________________________________________________________________________________________________
+dense_2 (Dense)                 (None, 1652)         424564      dense_1[0][0]                    
+==================================================================================================
+Total params: 1,813,268
+Trainable params: 1,482,868
+Non-trainable params: 330,400
+__________________________________________________________________________________________________
+
+[2021-11-16 21:00:25,557: INFO: stage_05_training_model]: training completed
+[2021-11-16 21:00:25,558: INFO: all_utils]: directory is created at artifacts\model
+[2021-11-16 21:00:25,579: INFO: stage_05_training_model]: trained model is saved at: artifacts\model\model_at_Tue_Nov_16_21_00_25_2021_.h5
+[2021-11-16 21:00:26,028: INFO: stage_05_training_model]: stage five completed !! model trained 
+ >>>>>>>>>>>>

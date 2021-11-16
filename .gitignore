@@ -5,3 +5,5 @@ config/secrets.yaml
 .vscode/
 
 data/
+
+artifacts/model/
