@@ -19,6 +19,8 @@ artifacts:
    PICKLE: Pickle
    TRAIN_FEATURES_FILE_NAME: encoded_train_images.pkl 
    TEST_FEATURES_FILE_NAME: encoded_test_images.pkl 
+   LOCATION: C:\Users\HP\Major_Project\Image_Captioning_for_visually_impaired\images
+   MP3_DIR: C:\Users\HP\Major_Project\Image_Captioning_for_visually_impaired\speechs
 
 source_download_path:
    - ../data/Flicker8k_Dataset
@@ -39,3 +41,4 @@ prepaired_data_dir:
    - prepaired_data/train_img
    - prepaired_data/test_img
    - prepaired_data/train_descriptions_dir
+   - prepaired_data/ixtoword_dir

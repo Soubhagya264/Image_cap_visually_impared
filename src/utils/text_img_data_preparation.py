@@ -98,4 +98,4 @@ def find_vocab_size_max_len(vocab,all_train_captions):
         max_length = max(len(des.split()) for des in all_train_captions)
         vocab_size = len(ixtoword) + 1
         logging.info("finding vocab_size max_len is completed")
-        return vocab_size ,max_length,wordtoix       
+        return vocab_size ,max_length,wordtoix,ixtoword       
