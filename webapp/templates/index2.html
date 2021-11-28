@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- <form method="post" id="datafetch_form" enctype="multipart/form-data"> -->
+        <input type="file" class="drop-zone__input" id="image_input_field">
+        <!-- <input type="text" name="file" id="input_field"> -->
+        <div class="sendbtn">
+            <button type="submit" id="imagefile" >Send</button>
+        </div>
+         <!-- var file = fileInput.files[0];
+            console.log(file);
+            var formData = new FormData();
+            formData.append('file', file); 
+        
+        $.ajax({
+        
+                url: "/predict",
+                type: "POST",
+                data: {
+                
+                    name: fileInput
+                },
+                success: function (response) {
+                    
+                    alert(response)
+                    
+                },
+                error:function(response){
+                    alert(response.message);
+                }
+            });
+        
+        
+        -->
+<!-- </form> -->
+
+<div id="res">
+    <audio id= "audio" controls class="audiplay">
+        <source id="audioSource" src="" ><audio>
+             
+         </audio>
+    </audio>
+</div>
+<!-- <audio controls class="audiplay">
+    <source src="" type="audio/mp3"><audio>
+         
+     </audio> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://sh20raj.github.io/AudiPlay/audiplay.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#loading').hide();
+        $("#imagefile").click(function (e) {
+            //e.preventDefault();
+            var fileInput = document.getElementById('image_input_field');
+            var file = fileInput.files[0];
+            console.log(file);
+            var formData = new FormData();
+            formData.append('file', file);
+            
+
+
+            $.ajax({
+        
+                url: "/predict",
+                dataType:'json',
+                
+                contentType: false,
+                processData: false,
+                cache:false,
+                type: 'post',
+			
+                data:formData,
+                
+                success: function (response) {
+                    //$("#res").html('<audio id="audio" controls class="audiplay"><source id="audioSource" src=""></source>Your browser does not support the audio format.</audio>');
+                    var audio = document.getElementById('audio');
+                    var source = document.getElementById('audioSource');
+                    var audioFile = "data:audio/wav;base64," + response.data;
+                    source.src = audioFile;
+                    audio.load();
+                    
+                },
+                
+                
+            });
+            
+        });
+           
+        });
+
+    </script>
+    
+</body>
+
+
+</html>

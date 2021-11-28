@@ -1,4 +1,6 @@
-from flask import Flask, render_template, request, jsonify,send_from_directory
+# 
+# 
+from flask import Flask, json, render_template, request, jsonify,send_from_directory
 from wsgiref import simple_server
 from src.utils.all_utils import read_yaml,create_directory
 import os
@@ -40,13 +42,15 @@ def download_file(filename):
 @app.route("/", methods=['GET'])
 @cross_origin()
 def home():
-    return render_template('index.html')    
+    return render_template('index2.html')    
     
 @app.route("/predict", methods=["POST"])
 @cross_origin()
 def predict():
     try:
-         
+        
+        # if request.method=="POST":
+                print(request.files)
                 logging.info("getting file")
                 file = request.files['file']
                 print(file.filename)
@@ -62,11 +66,11 @@ def predict():
                     os.remove(sound_path)
                
                 res,string = prediction.predict(img_path)
-                print(res)
+                print(res,string)
                 os.remove(img_path)
                 logging.info("predicted responses")
                 return {"data" : string.decode("utf-8")}       
-    
+        
     except Exception as e:
         logging.info(e)     
     except ValueError:
