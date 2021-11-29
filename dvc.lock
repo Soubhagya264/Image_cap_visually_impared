@@ -4,8 +4,8 @@ stages:
     cmd: python src/stage_01_load_save.py  --config=config/config.yaml
     deps:
     - path: config/config.yaml
-      md5: 367256f6a5c4272a6c7f10ed08fece1d
-      size: 1421
+      md5: 1df76c5dfd8ce03ed0de3e72688bf80c
+      size: 1423
     - path: src/stage_01_load_save.py
       md5: 6ab7a685fe469e3593e9f0f9e9475053
       size: 1644
@@ -21,10 +21,6 @@ stages:
       md5: 74eee7486ac2681d8c8a9dc16d4cb708.dir
       size: 10113299
       nfiles: 8
-    - path: data/Pickle
-      md5: 67d25effb019bb375f2d98dd7aaf2fd1.dir
-      size: 57992237
-      nfiles: 2
     - path: data/glove
       md5: 4d46af83123a9115d49b067e751bee83.dir
       size: 693432828
@@ -33,8 +29,8 @@ stages:
     cmd: python src/stage_02_data_preparation.py  --config=config/config.yaml
     deps:
     - path: config/config.yaml
-      md5: 367256f6a5c4272a6c7f10ed08fece1d
-      size: 1421
+      md5: 1df76c5dfd8ce03ed0de3e72688bf80c
+      size: 1423
     - path: src/stage_02_data_preparation.py
       md5: 1460c5678837c8e14ad0db3776947521
       size: 3467
@@ -73,3 +69,25 @@ stages:
       md5: 6474731a8a9abb1c08005a1925cd966e.dir
       size: 25134
       nfiles: 1
+  prepaire_base_model:
+    cmd: python src/stage_03_prepare_base_model.py  --config=config/config.yaml
+    deps:
+    - path: config/config.yaml
+      md5: 1df76c5dfd8ce03ed0de3e72688bf80c
+      size: 1423
+    - path: src/stage_03_prepare_base_model.py
+      md5: 1bae6ee1666f3072f2ecb9e126ca26f2
+      size: 3697
+    - path: src/utils/all_utils.py
+      md5: 367da31cc6704d959ef12ab3c6b85c6f
+      size: 972
+    - path: src/utils/models.py
+      md5: bfa5df785721a0c0605443d4c66ef488
+      size: 1185
+    outs:
+    - path: artifacts/base_model/inception_base_model.h5
+      md5: d7be4cdc53ca0ea8cd5b5ad29d270f42
+      size: 96260344
+    - path: data/Pickle/encoded_train_images.pkl
+      md5: e04abab6cfb6a2e6d824267d0bc3a0b8
+      size: 33086
