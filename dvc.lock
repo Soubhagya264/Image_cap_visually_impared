@@ -29,3 +29,47 @@ stages:
       md5: 4d46af83123a9115d49b067e751bee83.dir
       size: 693432828
       nfiles: 1
+  prepaired_data:
+    cmd: python src/stage_02_data_preparation.py  --config=config/config.yaml
+    deps:
+    - path: config/config.yaml
+      md5: 367256f6a5c4272a6c7f10ed08fece1d
+      size: 1421
+    - path: src/stage_02_data_preparation.py
+      md5: 1460c5678837c8e14ad0db3776947521
+      size: 3467
+    - path: src/utils/all_utils.py
+      md5: 367da31cc6704d959ef12ab3c6b85c6f
+      size: 972
+    - path: src/utils/text_img_data_preparation.py
+      md5: 38ac33bb12e24137f1a06135d2128bbe
+      size: 3637
+    outs:
+    - path: prepaired_data/ixtoword_dir
+      md5: 9c52973e9b809d3e230697c6a10fcd90.dir
+      size: 25134
+      nfiles: 1
+    - path: prepaired_data/max_length_dir
+      md5: 03ccabee215f76f9fcc3e11e31f5dd11.dir
+      size: 2
+      nfiles: 1
+    - path: prepaired_data/test_img
+      md5: 26e2841bb8b775ca2aab7511fefca630.dir
+      size: 53775
+      nfiles: 1
+    - path: prepaired_data/train_descriptions_dir
+      md5: fb291164a5f118231be520d0ab42e563.dir
+      size: 2258011
+      nfiles: 1
+    - path: prepaired_data/train_img
+      md5: 1b2933d1b2aecaf9c8d8c5ca28e2e359.dir
+      size: 322678
+      nfiles: 1
+    - path: prepaired_data/vocab_size_dir
+      md5: 353f23bcb82319c352acec366c126630.dir
+      size: 4
+      nfiles: 1
+    - path: prepaired_data/wordtoix_dir
+      md5: 6474731a8a9abb1c08005a1925cd966e.dir
+      size: 25134
+      nfiles: 1
