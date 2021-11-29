@@ -350,3 +350,205 @@ PermissionError: [Errno 13] Permission denied: '../data/Flickr8k_text\\__MACOSX'
 [2021-11-29 11:00:49,717: INFO: stage_02_data_preparation]: prepared data  written succesfully in the ixtoword.txt file and stored in the prepaired_data/ixtoword_dir dir 
 [2021-11-29 11:00:49,722: INFO: stage_02_data_preparation]: stage two completed !! all the img_text_data prepartion done and stored 
  >>>>>>>>>>>>
+[2021-11-29 11:35:39,058: INFO: stage_01_load_save]: 
+ >>>>>>>>>> stage one started
+[2021-11-29 11:35:39,062: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 11:35:39,073: INFO: all_utils]: directory is created at data/Flicker8k_Dataset
+[2021-11-29 11:35:47,389: INFO: all_utils]: directory is created at data/Flickr8k_text
+[2021-11-29 11:35:47,408: INFO: all_utils]: directory is created at data/glove
+[2021-11-29 11:35:48,163: INFO: stage_01_load_save]: stage one completed !! all the data stored in local 
+ >>>>>>>>>>>>
+[2021-11-29 11:36:16,223: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage two started
+[2021-11-29 11:36:16,226: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 11:36:16,229: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-29 11:36:16,259: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-29 11:36:16,259: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-29 11:36:16,520: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-29 11:36:16,520: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-29 11:36:16,563: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-29 11:36:17,053: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-29 11:36:17,424: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-29 11:36:17,424: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-29 11:36:17,426: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-29 11:36:17,426: INFO: text_img_data_preparation]: started finding vocab size and maximum length
+[2021-11-29 11:36:17,506: INFO: text_img_data_preparation]: finding vocab_size max_len is completed
+[2021-11-29 11:36:17,507: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-29 11:36:17,507: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-29 11:36:17,507: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-29 11:36:17,507: INFO: all_utils]: directory is created at prepaired_data/train_img
+[2021-11-29 11:36:17,508: INFO: all_utils]: directory is created at prepaired_data/test_img
+[2021-11-29 11:36:17,508: INFO: all_utils]: directory is created at prepaired_data/train_descriptions_dir
+[2021-11-29 11:36:17,509: INFO: all_utils]: directory is created at prepaired_data/ixtoword_dir
+[2021-11-29 11:36:17,509: INFO: stage_02_data_preparation]: started writing the prepared vocab_size in the vocab_size.txt file 
+[2021-11-29 11:36:17,509: INFO: stage_02_data_preparation]: prepared data  written succesfully in the vocab_size.txt file and stored in the prepaired_data/vocab_size_dir dir 
+[2021-11-29 11:36:17,509: INFO: stage_02_data_preparation]: started writing the prepared max_length in the max_length.txt file 
+[2021-11-29 11:36:17,509: INFO: stage_02_data_preparation]: prepared data  written succesfully in the max_length.txt file and stored in the prepaired_data/max_length_dir dir 
+[2021-11-29 11:36:17,510: INFO: stage_02_data_preparation]: started writing the prepared wordtoix in the wordtoix.txt file 
+[2021-11-29 11:36:17,510: INFO: stage_02_data_preparation]: prepared data  written succesfully in the wordtoix.txt file and stored in the prepaired_data/wordtoix_dir dir 
+[2021-11-29 11:36:17,511: INFO: stage_02_data_preparation]: started writing the prepared train_img in the train_img.txt file 
+[2021-11-29 11:36:17,514: INFO: stage_02_data_preparation]: prepared data  written succesfully in the train_img.txt file and stored in the prepaired_data/train_img dir 
+[2021-11-29 11:36:17,514: INFO: stage_02_data_preparation]: started writing the prepared test_img in the test_img.txt file 
+[2021-11-29 11:36:17,515: INFO: stage_02_data_preparation]: prepared data  written succesfully in the test_img.txt file and stored in the prepaired_data/test_img dir 
+[2021-11-29 11:36:17,516: INFO: stage_02_data_preparation]: started writing the prepared train_descriptions in the train_descriptions.txt file 
+[2021-11-29 11:36:17,539: INFO: stage_02_data_preparation]: prepared data  written succesfully in the train_descriptions.txt file and stored in the prepaired_data/train_descriptions_dir dir 
+[2021-11-29 11:36:17,540: INFO: stage_02_data_preparation]: started writing the prepared ixtoword in the ixtoword.txt file 
+[2021-11-29 11:36:17,541: INFO: stage_02_data_preparation]: prepared data  written succesfully in the ixtoword.txt file and stored in the prepaired_data/ixtoword_dir dir 
+[2021-11-29 11:36:17,545: INFO: stage_02_data_preparation]: stage two completed !! all the img_text_data prepartion done and stored 
+ >>>>>>>>>>>>
+[2021-11-29 11:36:18,363: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage two started
+[2021-11-29 11:36:18,366: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 11:36:18,369: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-29 11:36:18,401: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-29 11:36:18,401: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-29 11:36:18,666: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-29 11:36:18,666: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-29 11:36:18,705: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-29 11:36:19,208: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-29 11:36:19,581: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-29 11:36:19,582: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-29 11:36:19,583: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-29 11:36:19,583: INFO: text_img_data_preparation]: started finding vocab size and maximum length
+[2021-11-29 11:36:19,661: INFO: text_img_data_preparation]: finding vocab_size max_len is completed
+[2021-11-29 11:36:19,662: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-29 11:36:19,662: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-29 11:36:19,662: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-29 11:36:19,662: INFO: all_utils]: directory is created at prepaired_data/train_img
+[2021-11-29 11:36:19,662: INFO: all_utils]: directory is created at prepaired_data/test_img
+[2021-11-29 11:36:19,663: INFO: all_utils]: directory is created at prepaired_data/train_descriptions_dir
+[2021-11-29 11:36:19,663: INFO: all_utils]: directory is created at prepaired_data/ixtoword_dir
+[2021-11-29 11:36:19,663: INFO: stage_02_data_preparation]: started writing the prepared vocab_size in the vocab_size.txt file 
+[2021-11-29 11:36:19,663: INFO: stage_02_data_preparation]: prepared data  written succesfully in the vocab_size.txt file and stored in the prepaired_data/vocab_size_dir dir 
+[2021-11-29 11:36:19,663: INFO: stage_02_data_preparation]: started writing the prepared max_length in the max_length.txt file 
+[2021-11-29 11:36:19,664: INFO: stage_02_data_preparation]: prepared data  written succesfully in the max_length.txt file and stored in the prepaired_data/max_length_dir dir 
+[2021-11-29 11:36:19,664: INFO: stage_02_data_preparation]: started writing the prepared wordtoix in the wordtoix.txt file 
+[2021-11-29 11:36:19,664: INFO: stage_02_data_preparation]: prepared data  written succesfully in the wordtoix.txt file and stored in the prepaired_data/wordtoix_dir dir 
+[2021-11-29 11:36:19,665: INFO: stage_02_data_preparation]: started writing the prepared train_img in the train_img.txt file 
+[2021-11-29 11:36:19,668: INFO: stage_02_data_preparation]: prepared data  written succesfully in the train_img.txt file and stored in the prepaired_data/train_img dir 
+[2021-11-29 11:36:19,668: INFO: stage_02_data_preparation]: started writing the prepared test_img in the test_img.txt file 
+[2021-11-29 11:36:19,669: INFO: stage_02_data_preparation]: prepared data  written succesfully in the test_img.txt file and stored in the prepaired_data/test_img dir 
+[2021-11-29 11:36:19,669: INFO: stage_02_data_preparation]: started writing the prepared train_descriptions in the train_descriptions.txt file 
+[2021-11-29 11:36:19,698: INFO: stage_02_data_preparation]: prepared data  written succesfully in the train_descriptions.txt file and stored in the prepaired_data/train_descriptions_dir dir 
+[2021-11-29 11:36:19,699: INFO: stage_02_data_preparation]: started writing the prepared ixtoword in the ixtoword.txt file 
+[2021-11-29 11:36:19,699: INFO: stage_02_data_preparation]: prepared data  written succesfully in the ixtoword.txt file and stored in the prepaired_data/ixtoword_dir dir 
+[2021-11-29 11:36:19,703: INFO: stage_02_data_preparation]: stage two completed !! all the img_text_data prepartion done and stored 
+ >>>>>>>>>>>>
+[2021-11-29 11:38:14,825: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-29 11:38:14,875: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 11:38:14,875: INFO: all_utils]: directory is created at artifacts\base_model
+[2021-11-29 11:38:17,935: INFO: models]: inception_v3 model saved at: artifacts\base_model\inception_base_model.h5
+[2021-11-29 11:38:17,961: INFO: stage_03_prepare_base_model]: encoding start for train
+[2021-11-29 11:38:17,961: ERROR: stage_03_prepare_base_model]: 'module' object is not callable
+Traceback (most recent call last):
+  File "src/stage_03_prepare_base_model.py", line 95, in <module>
+    prepare_base_model(config_path=parsed_args.config)
+  File "src/stage_03_prepare_base_model.py", line 55, in prepare_base_model
+    start = time()
+TypeError: 'module' object is not callable
+[2021-11-29 11:45:15,577: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-29 11:45:15,581: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 11:45:15,581: INFO: all_utils]: directory is created at artifacts\base_model
+[2021-11-29 11:45:18,847: INFO: models]: inception_v3 model saved at: artifacts\base_model\inception_base_model.h5
+[2021-11-29 11:45:18,880: INFO: stage_03_prepare_base_model]: encoding start for train
+[2021-11-29 11:45:18,880: ERROR: stage_03_prepare_base_model]: 'module' object is not callable
+Traceback (most recent call last):
+  File "src/stage_03_prepare_base_model.py", line 95, in <module>
+    prepare_base_model(config_path=parsed_args.config)
+  File "src/stage_03_prepare_base_model.py", line 55, in prepare_base_model
+    start = time()
+TypeError: 'module' object is not callable
+[2021-11-29 11:45:54,931: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-29 11:45:54,935: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 11:45:54,935: INFO: all_utils]: directory is created at artifacts\base_model
+[2021-11-29 11:45:58,336: INFO: models]: inception_v3 model saved at: artifacts\base_model\inception_base_model.h5
+[2021-11-29 11:45:58,370: INFO: stage_03_prepare_base_model]: encoding start for train
+[2021-11-29 11:45:58,370: ERROR: stage_03_prepare_base_model]: 'module' object is not callable
+Traceback (most recent call last):
+  File "src/stage_03_prepare_base_model.py", line 95, in <module>
+    prepare_base_model(config_path=parsed_args.config)
+  File "src/stage_03_prepare_base_model.py", line 55, in prepare_base_model
+    start = time()
+TypeError: 'module' object is not callable
+[2021-11-29 11:46:45,533: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-29 11:46:45,536: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 11:46:45,537: INFO: all_utils]: directory is created at artifacts\base_model
+[2021-11-29 11:46:48,899: INFO: models]: inception_v3 model saved at: artifacts\base_model\inception_base_model.h5
+[2021-11-29 11:46:48,934: INFO: stage_03_prepare_base_model]: encoding start for train
+[2021-11-29 11:46:48,934: ERROR: stage_03_prepare_base_model]: 'module' object is not callable
+Traceback (most recent call last):
+  File "src/stage_03_prepare_base_model.py", line 95, in <module>
+    prepare_base_model(config_path=parsed_args.config)
+  File "src/stage_03_prepare_base_model.py", line 55, in prepare_base_model
+    start = time()
+TypeError: 'module' object is not callable
+[2021-11-29 11:49:09,160: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-29 11:49:09,163: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 11:49:09,164: INFO: all_utils]: directory is created at artifacts\base_model
+[2021-11-29 11:49:12,550: INFO: models]: inception_v3 model saved at: artifacts\base_model\inception_base_model.h5
+[2021-11-29 11:49:12,585: INFO: stage_03_prepare_base_model]: encoding start for train
+[2021-11-29 11:49:12,586: ERROR: stage_03_prepare_base_model]: 'module' object is not callable
+Traceback (most recent call last):
+  File "src/stage_03_prepare_base_model.py", line 95, in <module>
+    prepare_base_model(config_path=parsed_args.config)
+  File "src/stage_03_prepare_base_model.py", line 55, in prepare_base_model
+    start = time()
+TypeError: 'module' object is not callable
+[2021-11-29 11:51:54,564: INFO: stage_03_prepare_base_model]: 
+ >>>>>>>>>> stage three started
+[2021-11-29 11:51:54,568: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 11:51:54,568: INFO: all_utils]: directory is created at artifacts\base_model
+[2021-11-29 11:51:57,946: INFO: models]: inception_v3 model saved at: artifacts\base_model\inception_base_model.h5
+[2021-11-29 11:51:57,989: INFO: stage_03_prepare_base_model]: encoding start for train
+[2021-11-29 11:59:27,433: INFO: stage_03_prepare_base_model]: train img encoded 
+[2021-11-29 11:59:27,433: INFO: stage_03_prepare_base_model]: encoding start for test
+[2021-11-29 12:00:43,833: INFO: stage_03_prepare_base_model]: test img encoded 
+[2021-11-29 12:00:43,833: INFO: all_utils]: directory is created at data\Pickle
+[2021-11-29 12:00:43,833: INFO: stage_03_prepare_base_model]: strated creating the train_features folder and stored in picke directory
+[2021-11-29 12:00:43,834: INFO: stage_03_prepare_base_model]: stored encoded trained features
+[2021-11-29 12:00:43,834: INFO: stage_03_prepare_base_model]: strated creating the test_features folder and stored in picke directory
+[2021-11-29 12:00:43,835: INFO: stage_03_prepare_base_model]: stored encoded test features
+[2021-11-29 12:00:43,835: INFO: stage_03_prepare_base_model]: stage three completed !! base model is created 
+ >>>>>>>>>>>>
+[2021-11-29 12:12:54,713: INFO: stage_04_prepare_callbacks]: 
+ >>>>>>>>>> stage four started
+[2021-11-29 12:12:54,714: ERROR: stage_04_prepare_callbacks]: prepare_callbacks() missing 1 required positional argument: 'params_path'
+Traceback (most recent call last):
+  File "src/stage_04_prepare_callbacks.py", line 42, in <module>
+    prepare_callbacks(config_path=parsed_args.config)
+TypeError: prepare_callbacks() missing 1 required positional argument: 'params_path'
+[2021-11-29 12:13:43,597: INFO: stage_04_prepare_callbacks]: 
+ >>>>>>>>>> stage four started
+[2021-11-29 12:13:43,600: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 12:13:43,601: INFO: all_utils]: directory is created at artifacts\Tensorboard_log_dir
+[2021-11-29 12:13:43,601: INFO: all_utils]: directory is created at artifacts\checkpoints
+[2021-11-29 12:13:43,601: INFO: all_utils]: directory is created at artifacts\callbacks
+[2021-11-29 12:13:44,879: INFO: callbacks]: tensorboard callback is being saved at artifacts\callbacks\tb_cb.cb
+[2021-11-29 12:13:44,881: INFO: callbacks]: tensorboard callback is being saved at artifacts\callbacks\checkpoint_cb.cb
+[2021-11-29 12:13:44,881: INFO: stage_04_prepare_callbacks]: stage four completed !! callbacks are prepaired 
+ >>>>>>>>>>>>
+[2021-11-29 12:14:08,377: INFO: stage_04_prepare_callbacks]: 
+ >>>>>>>>>> stage four started
+[2021-11-29 12:14:08,381: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 12:14:08,381: INFO: all_utils]: directory is created at artifacts\Tensorboard_log_dir
+[2021-11-29 12:14:08,381: INFO: all_utils]: directory is created at artifacts\checkpoints
+[2021-11-29 12:14:08,381: INFO: all_utils]: directory is created at artifacts\callbacks
+[2021-11-29 12:14:09,545: INFO: callbacks]: tensorboard callback is being saved at artifacts\callbacks\tb_cb.cb
+[2021-11-29 12:14:09,546: INFO: callbacks]: tensorboard callback is being saved at artifacts\callbacks\checkpoint_cb.cb
+[2021-11-29 12:14:09,546: INFO: stage_04_prepare_callbacks]: stage four completed !! callbacks are prepaired 
+ >>>>>>>>>>>>
+[2021-11-29 12:14:35,182: INFO: stage_04_prepare_callbacks]: 
+ >>>>>>>>>> stage four started
+[2021-11-29 12:14:35,186: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 12:14:35,186: INFO: all_utils]: directory is created at artifacts\Tensorboard_log_dir
+[2021-11-29 12:14:35,186: INFO: all_utils]: directory is created at artifacts\checkpoints
+[2021-11-29 12:14:35,186: INFO: all_utils]: directory is created at artifacts\callbacks
+[2021-11-29 12:14:36,348: INFO: callbacks]: tensorboard callback is being saved at artifacts\callbacks\tb_cb.cb
+[2021-11-29 12:14:36,350: INFO: callbacks]: tensorboard callback is being saved at artifacts\callbacks\checkpoint_cb.cb
+[2021-11-29 12:14:36,350: INFO: stage_04_prepare_callbacks]: stage four completed !! callbacks are prepaired 
+ >>>>>>>>>>>>

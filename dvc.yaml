@@ -2,27 +2,50 @@ stages:
     load_data:
        cmd: python src/stage_01_load_save.py  --config=config/config.yaml
        deps:
-        - src/stage_01_load_save.py
-        - src/utils/all_utils.py
-        - config/config.yaml
+          - src/stage_01_load_save.py
+          - src/utils/all_utils.py
+          - config/config.yaml
        outs:
-        - data/Flicker8k_Dataset
-        - data/Flickr8k_text
-        - data/Pickle  
-        - data/glove
+          - data/Flicker8k_Dataset
+          - data/Flickr8k_text
+          #- data/Pickle  
+          - data/glove
     prepaired_data:
        cmd: python src/stage_02_data_preparation.py  --config=config/config.yaml   
        deps:
-        - src/stage_02_data_preparation.py
-        - src/utils/all_utils.py
-        - src/utils/text_img_data_preparation.py
-        - config/config.yaml
-        
+          - src/stage_02_data_preparation.py
+          - src/utils/all_utils.py
+          - src/utils/text_img_data_preparation.py
+          - config/config.yaml 
        outs:
-        - prepaired_data/vocab_size_dir
-        - prepaired_data/max_length_dir
-        - prepaired_data/wordtoix_dir     
-        - prepaired_data/train_img
-        - prepaired_data/test_img
-        - prepaired_data/train_descriptions_dir
-        - prepaired_data/ixtoword_dir 
+          - prepaired_data/vocab_size_dir
+          - prepaired_data/max_length_dir
+          - prepaired_data/wordtoix_dir     
+          - prepaired_data/train_img
+          - prepaired_data/test_img
+          - prepaired_data/train_descriptions_dir
+          - prepaired_data/ixtoword_dir 
+    prepaire_base_model: 
+        cmd: python src/stage_03_prepare_base_model.py  --config=config/config.yaml  
+        deps:
+          - src/stage_03_prepare_base_model.py
+          - src/utils/all_utils.py
+          - src/utils/models.py
+          - config/config.yaml
+        outs:
+          - artifacts/base_model/inception_base_model.h5
+          - data/Pickle/encoded_train_images.pkl
+          - data/Pickle/encoded_train_images.pkl 
+    
+    prepaire_callbacks: 
+        cmd: python src/stage_04_prepare_callbacks.py  --config=config/config.yaml  
+        deps:
+          - src/stage_04_prepare_callbacks.py
+          - src/utils/all_utils.py
+          - src/utils/callbacks.py
+          - config/config.yaml
+        outs:
+          - artifacts/callbacks/checkpoint_cb.cb
+          - artifacts/callbacks/tb_cb.cb
+                 
+          

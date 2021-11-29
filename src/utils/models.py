@@ -1,12 +1,12 @@
 import tensorflow as tf
 import os
 import logging
-from keras.applications.inception_v3 import InceptionV3
+from tensorflow.keras.applications.inception_v3 import InceptionV3
 from tensorflow.python.keras.backend import flatten
-from keras.preprocessing import image
-from keras.applications.inception_v3 import preprocess_input
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras.applications.inception_v3 import preprocess_input
 import numpy as np
-from keras.models import Model
+from tensorflow.keras.models import Model
 from utils.all_utils import get_time_stamp 
 
 def get_inception_v3_model(model_path):

@@ -12,9 +12,9 @@ os.makedirs(log_dir,exist_ok=True)
 logging.basicConfig(filename=os.path.join(log_dir,"running_logs.log"),level=logging.INFO,format=logging_str,filemode='a')
 
 
-def prepare_callbacks(config_path,params_path):
+def prepare_callbacks(config_path):
     config=read_yaml(config_path)
-    params=read_yaml(params_path)
+    
     
     artifacts=config["artifacts"]
     artifacts_dir=artifacts["ARTIFACTS_DIR"]
@@ -35,11 +35,11 @@ def prepare_callbacks(config_path,params_path):
 if __name__=="__main__":
     args=argparse.ArgumentParser()
     args.add_argument("--config","-c",default="config/config.yaml")
-    args.add_argument("--params","-p",default="params.yaml")
+    
     parsed_args=args.parse_args()
     try:
         logging.info("\n >>>>>>>>>> stage four started")
-        prepare_callbacks(config_path=parsed_args.config,params_path=parsed_args.params) 
+        prepare_callbacks(config_path=parsed_args.config) 
         logging.info("stage four completed !! callbacks are prepaired \n >>>>>>>>>>>>")  
     except Exception as e:
         logging.exception(e)

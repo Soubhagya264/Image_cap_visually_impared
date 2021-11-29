@@ -2,14 +2,14 @@ from utils.all_utils import read_yaml,create_directory
 from utils.callbacks import get_callbacks
 from utils.models import get_unique_path_to_save_model
 from utils.data_management import data_generator
-from keras.preprocessing import sequence
-from keras.models import Sequential
-from keras.layers import LSTM,Embedding,TimeDistributed,Dense,RepeatVector,Activation,Flatten,Reshape,concatenate,Dropout,BatchNormalization
-from keras.optimizers import Adam, RMSprop
-from keras.layers.wrappers import Bidirectional
-from keras.layers.merge import add
-from keras.models import Model
-from keras import Input, layers
+from tensorflow.keras.preprocessing import sequence
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import LSTM,Embedding,TimeDistributed,Dense,RepeatVector,Activation,Flatten,Reshape,concatenate,Dropout,BatchNormalization
+from tensorflow.keras.optimizers import Adam, RMSprop
+from tensorflow.keras.layers.wrappers import Bidirectional
+from tensorflow.keras.layers.merge import add
+from tensorflow.keras.models import Model
+from tensorflow.keras import Input, layers
 import argparse
 import pandas as pd
 import os

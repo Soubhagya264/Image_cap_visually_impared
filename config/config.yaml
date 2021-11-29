@@ -25,13 +25,11 @@ artifacts:
 source_download_path:
    - ../data/Flicker8k_Dataset
    - ../data/Flickr8k_text
-   - ../data/Pickle
    - ../data/glove
 
 local_data_dirs:
    - data/Flicker8k_Dataset
-   - data/Flickr8k_text
-   - data/Pickle  
+   - data/Flickr8k_text 
    - data/glove
 
 prepaired_data_dir:

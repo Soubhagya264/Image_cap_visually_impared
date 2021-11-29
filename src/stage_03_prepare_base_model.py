@@ -1,7 +1,7 @@
 from utils.all_utils import read_yaml,create_directory
 from utils.models import get_inception_v3_model ,prepare_model,preprocess
-from keras.preprocessing import image
-from keras.applications.inception_v3 import preprocess_input
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras.applications.inception_v3 import preprocess_input
 import ast
 import argparse
 import time
@@ -24,9 +24,8 @@ def encode(image,model):
     vec = np.reshape(vec, (vec.shape[1]))
     return vec
 
-def prepare_base_model(config_path,params_path):
+def prepare_base_model(config_path):
     config=read_yaml(config_path)
-    param=read_yaml(params_path)
     artifacts=config["artifacts"]
     artifacts_dir=artifacts["ARTIFACTS_DIR"]
     base_model_dir=artifacts["BASE_MODEL_DIR"]
@@ -53,17 +52,17 @@ def prepare_base_model(config_path,params_path):
     encoding_train = {}
     encoding_test={}
     logging.info("encoding start for train")
-    start = time()
+    #start = time()
     for img in train_img:
         encoding_train[img[len(images+'/'):]] = encode(img,model)
         
-    logging.info(f"train img encoded and time taken is {time()-start}")     
+    logging.info(f"train img encoded ")     
     
     logging.info("encoding start for test")  
-    start=time()
+    # start=time()
     for img in test_img:
         encoding_test[img[len(images+'/'):]] = encode(img,model)
-    logging.info(f"test img encoded and time taken is {time()-start} ") 
+    logging.info(f"test img encoded ") 
     
     data_dir=artifacts["DATA_DIR"]
     PICKLE_DIR=artifacts["PICKLE"]
@@ -90,11 +89,10 @@ def prepare_base_model(config_path,params_path):
 if __name__=="__main__":
     args=argparse.ArgumentParser()
     args.add_argument("--config","-c",default="config/config.yaml")
-    args.add_argument("--params","-p",default="params.yaml")
     parsed_args=args.parse_args()
     try:
         logging.info("\n >>>>>>>>>> stage three started")
-        prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params) 
+        prepare_base_model(config_path=parsed_args.config) 
         logging.info("stage three completed !! base model is created \n >>>>>>>>>>>>")  
     except Exception as e:
         logging.exception(e)

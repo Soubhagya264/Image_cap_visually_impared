@@ -91,3 +91,25 @@ stages:
     - path: data/Pickle/encoded_train_images.pkl
       md5: e04abab6cfb6a2e6d824267d0bc3a0b8
       size: 33086
+  prepaire_callbacks:
+    cmd: python src/stage_04_prepare_callbacks.py  --config=config/config.yaml
+    deps:
+    - path: config/config.yaml
+      md5: 1df76c5dfd8ce03ed0de3e72688bf80c
+      size: 1423
+    - path: src/stage_04_prepare_callbacks.py
+      md5: 8ed9720490b2b4efe57bc930d7f750b9
+      size: 1644
+    - path: src/utils/all_utils.py
+      md5: 367da31cc6704d959ef12ab3c6b85c6f
+      size: 972
+    - path: src/utils/callbacks.py
+      md5: fdf3e53597168be5c503b49e9e61e688
+      size: 1504
+    outs:
+    - path: artifacts/callbacks/checkpoint_cb.cb
+      md5: 4c8e41e077167723746afa3d25211387
+      size: 766
+    - path: artifacts/callbacks/tb_cb.cb
+      md5: e76cadfcbf8966d43649d17e7adfe65d
+      size: 549
