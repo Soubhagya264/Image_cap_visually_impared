@@ -1,0 +1,352 @@
+[2021-11-29 10:16:45,677: INFO: stage_01_load_save]: 
+ >>>>>>>>>> stage one started
+[2021-11-29 10:16:45,682: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 10:16:45,697: INFO: all_utils]: directory is created at data/Flicker8k_Dataset
+[2021-11-29 10:17:04,580: INFO: all_utils]: directory is created at data/Flickr8k_text
+[2021-11-29 10:17:04,628: ERROR: stage_01_load_save]: [Errno 13] Permission denied: '../data/Flickr8k_text\\__MACOSX'
+Traceback (most recent call last):
+  File "src/stage_01_load_save.py", line 39, in <module>
+    get_data(config_path=parsed_args.config)
+  File "src/stage_01_load_save.py", line 30, in get_data
+    copy_file(source_path,local_dir)
+  File "src/stage_01_load_save.py", line 19, in copy_file
+    shutil.copy(src,des)
+  File "C:\Users\HP\Major_Project\Image_Captioning_for_visually_impaired\env\lib\shutil.py", line 248, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "C:\Users\HP\Major_Project\Image_Captioning_for_visually_impaired\env\lib\shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+PermissionError: [Errno 13] Permission denied: '../data/Flickr8k_text\\__MACOSX'
+[2021-11-29 10:19:31,215: INFO: stage_01_load_save]: 
+ >>>>>>>>>> stage one started
+[2021-11-29 10:19:31,220: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 10:19:31,233: INFO: all_utils]: directory is created at data/Flicker8k_Dataset
+[2021-11-29 10:19:42,893: INFO: all_utils]: directory is created at data/Flickr8k_text
+[2021-11-29 10:19:42,934: ERROR: stage_01_load_save]: [Errno 13] Permission denied: '../data/Flickr8k_text\\__MACOSX'
+Traceback (most recent call last):
+  File "src/stage_01_load_save.py", line 39, in <module>
+    get_data(config_path=parsed_args.config)
+  File "src/stage_01_load_save.py", line 30, in get_data
+    copy_file(source_path,local_dir)
+  File "src/stage_01_load_save.py", line 19, in copy_file
+    shutil.copy(src,des)
+  File "C:\Users\HP\Major_Project\Image_Captioning_for_visually_impaired\env\lib\shutil.py", line 248, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "C:\Users\HP\Major_Project\Image_Captioning_for_visually_impaired\env\lib\shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+PermissionError: [Errno 13] Permission denied: '../data/Flickr8k_text\\__MACOSX'
+[2021-11-29 10:21:12,876: INFO: stage_01_load_save]: 
+ >>>>>>>>>> stage one started
+[2021-11-29 10:21:12,880: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 10:21:12,894: INFO: all_utils]: directory is created at data/Flicker8k_Dataset
+[2021-11-29 10:21:24,562: INFO: all_utils]: directory is created at data/Flickr8k_text
+[2021-11-29 10:21:24,602: ERROR: stage_01_load_save]: [Errno 13] Permission denied: '../data/Flickr8k_text\\__MACOSX'
+Traceback (most recent call last):
+  File "src/stage_01_load_save.py", line 39, in <module>
+    get_data(config_path=parsed_args.config)
+  File "src/stage_01_load_save.py", line 30, in get_data
+    copy_file(source_path,local_dir)
+  File "src/stage_01_load_save.py", line 19, in copy_file
+    shutil.copy(src,des)
+  File "C:\Users\HP\Major_Project\Image_Captioning_for_visually_impaired\env\lib\shutil.py", line 248, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "C:\Users\HP\Major_Project\Image_Captioning_for_visually_impaired\env\lib\shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+PermissionError: [Errno 13] Permission denied: '../data/Flickr8k_text\\__MACOSX'
+[2021-11-29 10:22:05,280: INFO: stage_01_load_save]: 
+ >>>>>>>>>> stage one started
+[2021-11-29 10:22:05,284: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 10:22:05,298: INFO: all_utils]: directory is created at data/Flicker8k_Dataset
+[2021-11-29 10:22:16,675: INFO: all_utils]: directory is created at data/Flickr8k_text
+[2021-11-29 10:22:16,715: ERROR: stage_01_load_save]: [Errno 13] Permission denied: '../data/Flickr8k_text\\__MACOSX'
+Traceback (most recent call last):
+  File "src/stage_01_load_save.py", line 39, in <module>
+    get_data(config_path=parsed_args.config)
+  File "src/stage_01_load_save.py", line 30, in get_data
+    copy_file(source_path,local_dir)
+  File "src/stage_01_load_save.py", line 19, in copy_file
+    shutil.copy(src,des)
+  File "C:\Users\HP\Major_Project\Image_Captioning_for_visually_impaired\env\lib\shutil.py", line 248, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "C:\Users\HP\Major_Project\Image_Captioning_for_visually_impaired\env\lib\shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+PermissionError: [Errno 13] Permission denied: '../data/Flickr8k_text\\__MACOSX'
+[2021-11-29 10:26:42,281: INFO: stage_01_load_save]: 
+ >>>>>>>>>> stage one started
+[2021-11-29 10:26:42,287: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 10:26:42,303: INFO: all_utils]: directory is created at data/Flicker8k_Dataset
+[2021-11-29 10:26:55,158: INFO: all_utils]: directory is created at data/Flickr8k_text
+[2021-11-29 10:26:55,204: ERROR: stage_01_load_save]: [Errno 13] Permission denied: '../data/Flickr8k_text\\__MACOSX'
+Traceback (most recent call last):
+  File "src/stage_01_load_save.py", line 39, in <module>
+    get_data(config_path=parsed_args.config)
+  File "src/stage_01_load_save.py", line 30, in get_data
+    copy_file(source_path,local_dir)
+  File "src/stage_01_load_save.py", line 19, in copy_file
+    shutil.copy(src,des)
+  File "C:\Users\HP\Major_Project\Image_Captioning_for_visually_impaired\env\lib\shutil.py", line 248, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "C:\Users\HP\Major_Project\Image_Captioning_for_visually_impaired\env\lib\shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+PermissionError: [Errno 13] Permission denied: '../data/Flickr8k_text\\__MACOSX'
+[2021-11-29 10:28:28,886: INFO: stage_01_load_save]: 
+ >>>>>>>>>> stage one started
+[2021-11-29 10:28:28,890: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 10:28:28,906: INFO: all_utils]: directory is created at data/Flicker8k_Dataset
+[2021-11-29 10:28:37,032: INFO: all_utils]: directory is created at data/Flickr8k_text
+[2021-11-29 10:28:37,060: ERROR: stage_01_load_save]: [Errno 13] Permission denied: '../data/Flickr8k_text\\__MACOSX'
+Traceback (most recent call last):
+  File "src/stage_01_load_save.py", line 39, in <module>
+    get_data(config_path=parsed_args.config)
+  File "src/stage_01_load_save.py", line 30, in get_data
+    copy_file(source_path,local_dir)
+  File "src/stage_01_load_save.py", line 19, in copy_file
+    shutil.copy(src,des)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python38\lib\shutil.py", line 415, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python38\lib\shutil.py", line 261, in copyfile
+    with open(src, 'rb') as fsrc, open(dst, 'wb') as fdst:
+PermissionError: [Errno 13] Permission denied: '../data/Flickr8k_text\\__MACOSX'
+[2021-11-29 10:31:54,694: INFO: stage_01_load_save]: 
+ >>>>>>>>>> stage one started
+[2021-11-29 10:31:54,699: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 10:31:54,714: INFO: all_utils]: directory is created at data/Flicker8k_Dataset
+[2021-11-29 10:32:02,784: INFO: all_utils]: directory is created at data/Flickr8k_text
+[2021-11-29 10:32:02,818: ERROR: stage_01_load_save]: [Errno 13] Permission denied: '../data/Flickr8k_text\\__MACOSX'
+Traceback (most recent call last):
+  File "src/stage_01_load_save.py", line 41, in <module>
+    get_data(config_path=parsed_args.config)
+  File "src/stage_01_load_save.py", line 32, in get_data
+    copy_file(source_path,local_dir)
+  File "src/stage_01_load_save.py", line 19, in copy_file
+    shutil.copy(src,des)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python38\lib\shutil.py", line 415, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python38\lib\shutil.py", line 261, in copyfile
+    with open(src, 'rb') as fsrc, open(dst, 'wb') as fdst:
+PermissionError: [Errno 13] Permission denied: '../data/Flickr8k_text\\__MACOSX'
+[2021-11-29 10:32:45,580: INFO: stage_01_load_save]: 
+ >>>>>>>>>> stage one started
+[2021-11-29 10:32:45,584: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 10:32:45,603: INFO: all_utils]: directory is created at data/Flicker8k_Dataset
+[2021-11-29 10:32:53,947: INFO: all_utils]: directory is created at data/Flickr8k_text
+[2021-11-29 10:32:53,969: ERROR: stage_01_load_save]: [Errno 13] Permission denied: '../data/Flickr8k_text\\__MACOSX'
+Traceback (most recent call last):
+  File "src/stage_01_load_save.py", line 41, in <module>
+    get_data(config_path=parsed_args.config)
+  File "src/stage_01_load_save.py", line 32, in get_data
+    copy_file(source_path,local_dir)
+  File "src/stage_01_load_save.py", line 19, in copy_file
+    shutil.copy(src,des)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python38\lib\shutil.py", line 415, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python38\lib\shutil.py", line 261, in copyfile
+    with open(src, 'rb') as fsrc, open(dst, 'wb') as fdst:
+PermissionError: [Errno 13] Permission denied: '../data/Flickr8k_text\\__MACOSX'
+[2021-11-29 10:34:23,637: INFO: stage_01_load_save]: 
+ >>>>>>>>>> stage one started
+[2021-11-29 10:34:23,641: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 10:34:23,658: INFO: all_utils]: directory is created at data/Flicker8k_Dataset
+[2021-11-29 10:34:32,407: INFO: all_utils]: directory is created at data/Flickr8k_text
+[2021-11-29 10:34:32,432: INFO: all_utils]: directory is created at data/Pickle
+[2021-11-29 10:34:32,510: INFO: all_utils]: directory is created at data/glove
+[2021-11-29 10:34:33,400: INFO: stage_01_load_save]: stage one completed !! all the data stored in local 
+ >>>>>>>>>>>>
+[2021-11-29 10:35:37,267: INFO: stage_01_load_save]: 
+ >>>>>>>>>> stage one started
+[2021-11-29 10:35:37,273: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 10:35:37,292: INFO: all_utils]: directory is created at data/Flicker8k_Dataset
+[2021-11-29 10:35:50,575: INFO: all_utils]: directory is created at data/Flickr8k_text
+[2021-11-29 10:35:50,612: INFO: all_utils]: directory is created at data/Pickle
+[2021-11-29 10:35:50,707: INFO: all_utils]: directory is created at data/glove
+[2021-11-29 10:35:51,917: INFO: stage_01_load_save]: stage one completed !! all the data stored in local 
+ >>>>>>>>>>>>
+[2021-11-29 10:55:43,521: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage two started
+[2021-11-29 10:55:43,527: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 10:55:43,530: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-29 10:55:43,571: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-29 10:55:43,572: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-29 10:55:43,926: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-29 10:55:43,926: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-29 10:55:43,986: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-29 10:55:44,635: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-29 10:55:45,202: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-29 10:55:45,202: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-29 10:55:45,205: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-29 10:55:45,205: INFO: text_img_data_preparation]: started finding vocab size and maximum length
+[2021-11-29 10:55:45,323: INFO: text_img_data_preparation]: finding vocab_size max_len is completed
+[2021-11-29 10:55:45,324: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-29 10:55:45,324: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-29 10:55:45,325: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-29 10:55:45,325: INFO: all_utils]: directory is created at prepaired_data/train_img
+[2021-11-29 10:55:45,326: INFO: all_utils]: directory is created at prepaired_data/test_img
+[2021-11-29 10:55:45,326: INFO: all_utils]: directory is created at prepaired_data/train_descriptions_dir
+[2021-11-29 10:55:45,327: INFO: all_utils]: directory is created at prepaired_data/ixtoword_dir
+[2021-11-29 10:55:45,327: INFO: stage_02_data_preparation]: started writing the prepared vocab_size in the vocab_size.txt file 
+[2021-11-29 10:55:45,327: INFO: stage_02_data_preparation]: prepared data  written succesfully in the vocab_size.txt file and stored in the prepaired_data/vocab_size_dir dir 
+[2021-11-29 10:55:45,328: INFO: stage_02_data_preparation]: started writing the prepared max_length in the max_length.txt file 
+[2021-11-29 10:55:45,328: INFO: stage_02_data_preparation]: prepared data  written succesfully in the max_length.txt file and stored in the prepaired_data/max_length_dir dir 
+[2021-11-29 10:55:45,329: INFO: stage_02_data_preparation]: started writing the prepared wordtoix in the wordtoix.txt file 
+[2021-11-29 10:55:45,329: INFO: stage_02_data_preparation]: prepared data  written succesfully in the wordtoix.txt file and stored in the prepaired_data/wordtoix_dir dir 
+[2021-11-29 10:55:45,330: INFO: stage_02_data_preparation]: started writing the prepared train_img in the train_img.txt file 
+[2021-11-29 10:55:45,334: INFO: stage_02_data_preparation]: prepared data  written succesfully in the train_img.txt file and stored in the prepaired_data/train_img dir 
+[2021-11-29 10:55:45,335: INFO: stage_02_data_preparation]: started writing the prepared test_img in the test_img.txt file 
+[2021-11-29 10:55:45,336: INFO: stage_02_data_preparation]: prepared data  written succesfully in the test_img.txt file and stored in the prepaired_data/test_img dir 
+[2021-11-29 10:55:45,337: INFO: stage_02_data_preparation]: started writing the prepared train_descriptions in the train_descriptions.txt file 
+[2021-11-29 10:55:45,369: INFO: stage_02_data_preparation]: prepared data  written succesfully in the train_descriptions.txt file and stored in the prepaired_data/train_descriptions_dir dir 
+[2021-11-29 10:55:45,369: INFO: stage_02_data_preparation]: started writing the prepared ixtoword in the ixtoword.txt file 
+[2021-11-29 10:55:45,370: INFO: stage_02_data_preparation]: prepared data  written succesfully in the ixtoword.txt file and stored in the prepaired_data/ixtoword_dir dir 
+[2021-11-29 10:55:45,375: INFO: stage_02_data_preparation]: stage two completed !! all the img_text_data prepartion done and stored 
+ >>>>>>>>>>>>
+[2021-11-29 10:57:19,205: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage two started
+[2021-11-29 10:57:19,210: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 10:57:19,214: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-29 10:57:19,256: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-29 10:57:19,256: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-29 10:57:19,594: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-29 10:57:19,595: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-29 10:57:19,650: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-29 10:57:20,343: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-29 10:57:20,843: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-29 10:57:20,844: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-29 10:57:20,846: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-29 10:57:20,846: INFO: text_img_data_preparation]: started finding vocab size and maximum length
+[2021-11-29 10:57:20,965: INFO: text_img_data_preparation]: finding vocab_size max_len is completed
+[2021-11-29 10:57:20,966: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-29 10:57:20,966: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-29 10:57:20,967: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-29 10:57:20,967: INFO: all_utils]: directory is created at prepaired_data/train_img
+[2021-11-29 10:57:20,968: INFO: all_utils]: directory is created at prepaired_data/test_img
+[2021-11-29 10:57:20,968: INFO: all_utils]: directory is created at prepaired_data/train_descriptions_dir
+[2021-11-29 10:57:20,969: INFO: all_utils]: directory is created at prepaired_data/ixtoword_dir
+[2021-11-29 10:57:20,969: INFO: stage_02_data_preparation]: started writing the prepared vocab_size in the vocab_size.txt file 
+[2021-11-29 10:57:20,969: INFO: stage_02_data_preparation]: prepared data  written succesfully in the vocab_size.txt file and stored in the prepaired_data/vocab_size_dir dir 
+[2021-11-29 10:57:20,970: INFO: stage_02_data_preparation]: started writing the prepared max_length in the max_length.txt file 
+[2021-11-29 10:57:20,970: INFO: stage_02_data_preparation]: prepared data  written succesfully in the max_length.txt file and stored in the prepaired_data/max_length_dir dir 
+[2021-11-29 10:57:20,970: INFO: stage_02_data_preparation]: started writing the prepared wordtoix in the wordtoix.txt file 
+[2021-11-29 10:57:20,971: INFO: stage_02_data_preparation]: prepared data  written succesfully in the wordtoix.txt file and stored in the prepaired_data/wordtoix_dir dir 
+[2021-11-29 10:57:20,971: INFO: stage_02_data_preparation]: started writing the prepared train_img in the train_img.txt file 
+[2021-11-29 10:57:20,978: INFO: stage_02_data_preparation]: prepared data  written succesfully in the train_img.txt file and stored in the prepaired_data/train_img dir 
+[2021-11-29 10:57:20,979: INFO: stage_02_data_preparation]: started writing the prepared test_img in the test_img.txt file 
+[2021-11-29 10:57:20,980: INFO: stage_02_data_preparation]: prepared data  written succesfully in the test_img.txt file and stored in the prepaired_data/test_img dir 
+[2021-11-29 10:57:20,980: INFO: stage_02_data_preparation]: started writing the prepared train_descriptions in the train_descriptions.txt file 
+[2021-11-29 10:57:21,013: INFO: stage_02_data_preparation]: prepared data  written succesfully in the train_descriptions.txt file and stored in the prepaired_data/train_descriptions_dir dir 
+[2021-11-29 10:57:21,014: INFO: stage_02_data_preparation]: started writing the prepared ixtoword in the ixtoword.txt file 
+[2021-11-29 10:57:21,014: INFO: stage_02_data_preparation]: prepared data  written succesfully in the ixtoword.txt file and stored in the prepaired_data/ixtoword_dir dir 
+[2021-11-29 10:57:21,019: INFO: stage_02_data_preparation]: stage two completed !! all the img_text_data prepartion done and stored 
+ >>>>>>>>>>>>
+[2021-11-29 10:57:50,979: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage two started
+[2021-11-29 10:57:50,986: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 10:57:50,990: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-29 10:57:51,034: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-29 10:57:51,034: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-29 10:57:51,387: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-29 10:57:51,388: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-29 10:57:51,442: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-29 10:57:52,154: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-29 10:57:52,652: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-29 10:57:52,652: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-29 10:57:52,654: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-29 10:57:52,654: INFO: text_img_data_preparation]: started finding vocab size and maximum length
+[2021-11-29 10:57:52,769: INFO: text_img_data_preparation]: finding vocab_size max_len is completed
+[2021-11-29 10:57:52,769: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-29 10:57:52,770: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-29 10:57:52,770: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-29 10:57:52,770: INFO: all_utils]: directory is created at prepaired_data/train_img
+[2021-11-29 10:57:52,771: INFO: all_utils]: directory is created at prepaired_data/test_img
+[2021-11-29 10:57:52,771: INFO: all_utils]: directory is created at prepaired_data/train_descriptions_dir
+[2021-11-29 10:57:52,771: INFO: all_utils]: directory is created at prepaired_data/ixtoword_dir
+[2021-11-29 10:57:52,772: INFO: stage_02_data_preparation]: started writing the prepared vocab_size in the vocab_size.txt file 
+[2021-11-29 10:57:52,772: INFO: stage_02_data_preparation]: prepared data  written succesfully in the vocab_size.txt file and stored in the prepaired_data/vocab_size_dir dir 
+[2021-11-29 10:57:52,772: INFO: stage_02_data_preparation]: started writing the prepared max_length in the max_length.txt file 
+[2021-11-29 10:57:52,773: INFO: stage_02_data_preparation]: prepared data  written succesfully in the max_length.txt file and stored in the prepaired_data/max_length_dir dir 
+[2021-11-29 10:57:52,773: INFO: stage_02_data_preparation]: started writing the prepared wordtoix in the wordtoix.txt file 
+[2021-11-29 10:57:52,774: INFO: stage_02_data_preparation]: prepared data  written succesfully in the wordtoix.txt file and stored in the prepaired_data/wordtoix_dir dir 
+[2021-11-29 10:57:52,774: INFO: stage_02_data_preparation]: started writing the prepared train_img in the train_img.txt file 
+[2021-11-29 10:57:52,780: INFO: stage_02_data_preparation]: prepared data  written succesfully in the train_img.txt file and stored in the prepaired_data/train_img dir 
+[2021-11-29 10:57:52,780: INFO: stage_02_data_preparation]: started writing the prepared test_img in the test_img.txt file 
+[2021-11-29 10:57:52,781: INFO: stage_02_data_preparation]: prepared data  written succesfully in the test_img.txt file and stored in the prepaired_data/test_img dir 
+[2021-11-29 10:57:52,782: INFO: stage_02_data_preparation]: started writing the prepared train_descriptions in the train_descriptions.txt file 
+[2021-11-29 10:57:52,813: INFO: stage_02_data_preparation]: prepared data  written succesfully in the train_descriptions.txt file and stored in the prepaired_data/train_descriptions_dir dir 
+[2021-11-29 10:57:52,814: INFO: stage_02_data_preparation]: started writing the prepared ixtoword in the ixtoword.txt file 
+[2021-11-29 10:57:52,815: INFO: stage_02_data_preparation]: prepared data  written succesfully in the ixtoword.txt file and stored in the prepaired_data/ixtoword_dir dir 
+[2021-11-29 10:57:52,819: INFO: stage_02_data_preparation]: stage two completed !! all the img_text_data prepartion done and stored 
+ >>>>>>>>>>>>
+[2021-11-29 10:58:17,527: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage two started
+[2021-11-29 10:58:17,531: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 10:58:17,534: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-29 10:58:17,573: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-29 10:58:17,573: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-29 10:58:17,955: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-29 10:58:17,956: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-29 10:58:18,015: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-29 10:58:18,709: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-29 10:58:19,205: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-29 10:58:19,205: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-29 10:58:19,207: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-29 10:58:19,207: INFO: text_img_data_preparation]: started finding vocab size and maximum length
+[2021-11-29 10:58:19,306: INFO: text_img_data_preparation]: finding vocab_size max_len is completed
+[2021-11-29 10:58:19,306: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-29 10:58:19,307: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-29 10:58:19,307: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-29 10:58:19,308: INFO: all_utils]: directory is created at prepaired_data/train_img
+[2021-11-29 10:58:19,308: INFO: all_utils]: directory is created at prepaired_data/test_img
+[2021-11-29 10:58:19,309: INFO: all_utils]: directory is created at prepaired_data/train_descriptions_dir
+[2021-11-29 10:58:19,309: INFO: all_utils]: directory is created at prepaired_data/ixtoword_dir
+[2021-11-29 10:58:19,309: INFO: stage_02_data_preparation]: started writing the prepared vocab_size in the vocab_size.txt file 
+[2021-11-29 10:58:19,309: INFO: stage_02_data_preparation]: prepared data  written succesfully in the vocab_size.txt file and stored in the prepaired_data/vocab_size_dir dir 
+[2021-11-29 10:58:19,310: INFO: stage_02_data_preparation]: started writing the prepared max_length in the max_length.txt file 
+[2021-11-29 10:58:19,310: INFO: stage_02_data_preparation]: prepared data  written succesfully in the max_length.txt file and stored in the prepaired_data/max_length_dir dir 
+[2021-11-29 10:58:19,310: INFO: stage_02_data_preparation]: started writing the prepared wordtoix in the wordtoix.txt file 
+[2021-11-29 10:58:19,311: INFO: stage_02_data_preparation]: prepared data  written succesfully in the wordtoix.txt file and stored in the prepaired_data/wordtoix_dir dir 
+[2021-11-29 10:58:19,311: INFO: stage_02_data_preparation]: started writing the prepared train_img in the train_img.txt file 
+[2021-11-29 10:58:19,316: INFO: stage_02_data_preparation]: prepared data  written succesfully in the train_img.txt file and stored in the prepaired_data/train_img dir 
+[2021-11-29 10:58:19,316: INFO: stage_02_data_preparation]: started writing the prepared test_img in the test_img.txt file 
+[2021-11-29 10:58:19,317: INFO: stage_02_data_preparation]: prepared data  written succesfully in the test_img.txt file and stored in the prepaired_data/test_img dir 
+[2021-11-29 10:58:19,317: INFO: stage_02_data_preparation]: started writing the prepared train_descriptions in the train_descriptions.txt file 
+[2021-11-29 10:58:19,346: INFO: stage_02_data_preparation]: prepared data  written succesfully in the train_descriptions.txt file and stored in the prepaired_data/train_descriptions_dir dir 
+[2021-11-29 10:58:19,347: INFO: stage_02_data_preparation]: started writing the prepared ixtoword in the ixtoword.txt file 
+[2021-11-29 10:58:19,347: INFO: stage_02_data_preparation]: prepared data  written succesfully in the ixtoword.txt file and stored in the prepaired_data/ixtoword_dir dir 
+[2021-11-29 10:58:19,351: INFO: stage_02_data_preparation]: stage two completed !! all the img_text_data prepartion done and stored 
+ >>>>>>>>>>>>
+[2021-11-29 11:00:47,863: INFO: stage_02_data_preparation]: 
+ >>>>>>>>>> stage two started
+[2021-11-29 11:00:47,868: INFO: all_utils]: Yaml file :config/config.yaml lodded sucessfully
+[2021-11-29 11:00:47,873: INFO: text_img_data_preparation]: load description function called  and started loading description
+[2021-11-29 11:00:47,933: INFO: text_img_data_preparation]:  Ended loading description
+[2021-11-29 11:00:47,933: INFO: text_img_data_preparation]: started cleaning the description
+[2021-11-29 11:00:48,328: INFO: text_img_data_preparation]: Description cleaned
+[2021-11-29 11:00:48,328: INFO: text_img_data_preparation]: Extracting Vocabulary from the sentences
+[2021-11-29 11:00:48,376: INFO: text_img_data_preparation]: vocabulary Extracted
+[2021-11-29 11:00:49,059: INFO: text_img_data_preparation]: started cleaning description for training images
+[2021-11-29 11:00:49,548: INFO: text_img_data_preparation]: description cleaned for training images
+[2021-11-29 11:00:49,548: INFO: text_img_data_preparation]: Extracting Captions
+[2021-11-29 11:00:49,550: INFO: text_img_data_preparation]: Captions Extracted
+[2021-11-29 11:00:49,550: INFO: text_img_data_preparation]: started finding vocab size and maximum length
+[2021-11-29 11:00:49,675: INFO: text_img_data_preparation]: finding vocab_size max_len is completed
+[2021-11-29 11:00:49,676: INFO: all_utils]: directory is created at prepaired_data/vocab_size_dir
+[2021-11-29 11:00:49,676: INFO: all_utils]: directory is created at prepaired_data/max_length_dir
+[2021-11-29 11:00:49,676: INFO: all_utils]: directory is created at prepaired_data/wordtoix_dir
+[2021-11-29 11:00:49,677: INFO: all_utils]: directory is created at prepaired_data/train_img
+[2021-11-29 11:00:49,677: INFO: all_utils]: directory is created at prepaired_data/test_img
+[2021-11-29 11:00:49,678: INFO: all_utils]: directory is created at prepaired_data/train_descriptions_dir
+[2021-11-29 11:00:49,678: INFO: all_utils]: directory is created at prepaired_data/ixtoword_dir
+[2021-11-29 11:00:49,679: INFO: stage_02_data_preparation]: started writing the prepared vocab_size in the vocab_size.txt file 
+[2021-11-29 11:00:49,679: INFO: stage_02_data_preparation]: prepared data  written succesfully in the vocab_size.txt file and stored in the prepaired_data/vocab_size_dir dir 
+[2021-11-29 11:00:49,679: INFO: stage_02_data_preparation]: started writing the prepared max_length in the max_length.txt file 
+[2021-11-29 11:00:49,679: INFO: stage_02_data_preparation]: prepared data  written succesfully in the max_length.txt file and stored in the prepaired_data/max_length_dir dir 
+[2021-11-29 11:00:49,680: INFO: stage_02_data_preparation]: started writing the prepared wordtoix in the wordtoix.txt file 
+[2021-11-29 11:00:49,680: INFO: stage_02_data_preparation]: prepared data  written succesfully in the wordtoix.txt file and stored in the prepaired_data/wordtoix_dir dir 
+[2021-11-29 11:00:49,681: INFO: stage_02_data_preparation]: started writing the prepared train_img in the train_img.txt file 
+[2021-11-29 11:00:49,685: INFO: stage_02_data_preparation]: prepared data  written succesfully in the train_img.txt file and stored in the prepaired_data/train_img dir 
+[2021-11-29 11:00:49,686: INFO: stage_02_data_preparation]: started writing the prepared test_img in the test_img.txt file 
+[2021-11-29 11:00:49,686: INFO: stage_02_data_preparation]: prepared data  written succesfully in the test_img.txt file and stored in the prepaired_data/test_img dir 
+[2021-11-29 11:00:49,687: INFO: stage_02_data_preparation]: started writing the prepared train_descriptions in the train_descriptions.txt file 
+[2021-11-29 11:00:49,715: INFO: stage_02_data_preparation]: prepared data  written succesfully in the train_descriptions.txt file and stored in the prepaired_data/train_descriptions_dir dir 
+[2021-11-29 11:00:49,716: INFO: stage_02_data_preparation]: started writing the prepared ixtoword in the ixtoword.txt file 
+[2021-11-29 11:00:49,717: INFO: stage_02_data_preparation]: prepared data  written succesfully in the ixtoword.txt file and stored in the prepaired_data/ixtoword_dir dir 
+[2021-11-29 11:00:49,722: INFO: stage_02_data_preparation]: stage two completed !! all the img_text_data prepartion done and stored 
+ >>>>>>>>>>>>

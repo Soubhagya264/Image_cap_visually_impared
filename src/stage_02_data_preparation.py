@@ -19,9 +19,8 @@ logging.basicConfig(filename=os.path.join(log_dir,"running_logs.log"),level=logg
 
       
 
-def data_preparation(config_path,params_path):
+def data_preparation(config_path):
     config=read_yaml(config_path)
-    param=read_yaml(params_path)
     artifacts=config["artifacts"]
     token_path=os.path.join(artifacts["DATA_DIR"],artifacts["TEXT_DATA"],artifacts["TOKEN_PATH_NAME"])
     text = open(token_path, 'r', encoding = 'utf-8').read()
@@ -77,11 +76,10 @@ def data_preparation(config_path,params_path):
 if __name__=="__main__":
     args=argparse.ArgumentParser()
     args.add_argument("--config","-c",default="config/config.yaml")
-    args.add_argument("--params","-p",default="params.yaml")
     parsed_args=args.parse_args()
     try:
         logging.info("\n >>>>>>>>>> stage two started")
-        data_preparation(config_path=parsed_args.config,params_path=parsed_args.params) 
+        data_preparation(config_path=parsed_args.config) 
         logging.info("stage two completed !! all the img_text_data prepartion done and stored \n >>>>>>>>>>>>")  
     except Exception as e:
         logging.exception(e)
